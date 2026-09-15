@@ -492,7 +492,6 @@
       "date": "2026-10-04",
       "title": "索马湾出海",
       "locations": [
-        "索马湾",
         "索马湾"
       ],
       "schedule": [
@@ -501,11 +500,7 @@
           "time": "白天",
           "type": "activity",
           "text": "索马湾出海",
-          "placeIds": [
-            "hotel-sheraton-soma",
-            "place-soma-marina",
-            "place-red-sea-reef"
-          ]
+          "placeId": "hotel-sheraton-soma"
         }
       ],
       "costReferences": [
@@ -527,7 +522,6 @@
       "date": "2026-10-05",
       "title": "索马湾出海",
       "locations": [
-        "索马湾",
         "索马湾"
       ],
       "schedule": [
@@ -536,11 +530,7 @@
           "time": "白天",
           "type": "activity",
           "text": "继续出海或海滩休闲",
-          "placeIds": [
-            "hotel-sheraton-soma",
-            "place-red-sea-reef",
-            "place-soma-beach"
-          ]
+          "placeId": "hotel-sheraton-soma"
         }
       ],
       "costReferences": [
@@ -571,10 +561,7 @@
           "time": "白天",
           "type": "activity",
           "text": "索马湾出海或休整",
-          "placeIds": [
-            "hotel-sheraton-soma",
-            "place-red-sea-reef"
-          ]
+          "placeId": "hotel-sheraton-soma"
         },
         {
           "id": "d7-item-2",
@@ -922,48 +909,6 @@
       }
     },
     {
-      "id": "place-soma-marina",
-      "name": "Soma Bay Marina",
-      "nameZh": "索马湾码头",
-      "countryCode": "EG",
-      "cityOrArea": "索马湾",
-      "geo": {
-        "lat": 26.849,
-        "lng": 33.992
-      },
-      "navigation": {
-        "query": "Soma Bay Marina, Egypt"
-      }
-    },
-    {
-      "id": "place-red-sea-reef",
-      "name": "Red Sea Reef Area",
-      "nameZh": "红海海域",
-      "countryCode": "EG",
-      "cityOrArea": "索马湾",
-      "geo": {
-        "lat": 26.873,
-        "lng": 34.062
-      },
-      "navigation": {
-        "query": "Red Sea Reef Area, Egypt"
-      }
-    },
-    {
-      "id": "place-soma-beach",
-      "name": "Soma Bay Beach",
-      "nameZh": "索马湾海滩",
-      "countryCode": "EG",
-      "cityOrArea": "索马湾",
-      "geo": {
-        "lat": 26.855,
-        "lng": 33.997
-      },
-      "navigation": {
-        "query": "Soma Bay Beach, Egypt"
-      }
-    },
-    {
       "id": "place-hurghada-airport",
       "name": "Hurghada International Airport T2",
       "nameZh": "赫尔格达机场 T2",
@@ -1126,7 +1071,7 @@
         "id": "soma",
         "label": "索马湾",
         "heading": "SOMA BAY / 索马湾",
-        "description": "红海酒店、码头、海域与赫尔格达机场。"
+        "description": "红海酒店与赫尔格达机场。"
       }
     ],
     "places": [
@@ -1345,36 +1290,6 @@
         "nameZh": "索马湾喜来登"
       },
       {
-        "id": "place-soma-marina",
-        "mapRegionId": "soma",
-        "geo": {
-          "lat": 26.849,
-          "lng": 33.992
-        },
-        "name": "Soma Bay Marina",
-        "nameZh": "索马湾码头"
-      },
-      {
-        "id": "place-red-sea-reef",
-        "mapRegionId": "soma",
-        "geo": {
-          "lat": 26.873,
-          "lng": 34.062
-        },
-        "name": "Red Sea Reef Area",
-        "nameZh": "红海海域"
-      },
-      {
-        "id": "place-soma-beach",
-        "mapRegionId": "soma",
-        "geo": {
-          "lat": 26.855,
-          "lng": 33.997
-        },
-        "name": "Soma Bay Beach",
-        "nameZh": "索马湾海滩"
-      },
-      {
         "id": "place-hurghada-airport",
         "mapRegionId": "soma",
         "geo": {
@@ -1481,29 +1396,10 @@
         ]
       },
       {
-        "day": 5,
-        "mode": "local",
-        "placeIds": [
-          "hotel-sheraton-soma",
-          "place-soma-marina",
-          "place-red-sea-reef"
-        ]
-      },
-      {
-        "day": 6,
-        "mode": "local",
-        "placeIds": [
-          "hotel-sheraton-soma",
-          "place-red-sea-reef",
-          "place-soma-beach"
-        ]
-      },
-      {
         "day": 7,
         "mode": "local",
         "placeIds": [
           "hotel-sheraton-soma",
-          "place-red-sea-reef",
           "place-hurghada-airport"
         ]
       }
@@ -2613,19 +2509,17 @@
         "templateId": "urban-radial",
         "mapModeReason": "compact-city-route",
         "mapModeMetrics": {
-          "placeCount": 5,
-          "geoPlaceCount": 5,
-          "widthKm": 25.99,
+          "placeCount": 2,
+          "geoPlaceCount": 2,
+          "widthKm": 19.72,
           "heightKm": 36.83,
-          "spanKm": 42.77,
-          "averageNearestKm": 9.99,
+          "spanKm": 41.85,
+          "averageNearestKm": 41.85,
           "components": 1,
-          "largestLegKm": 42.77,
-          "jumpRatio": 6.17
+          "largestLegKm": 41.85,
+          "jumpRatio": 1
         },
         "days": [
-          5,
-          6,
           7
         ],
         "canvas": {
@@ -2638,8 +2532,8 @@
         },
         "baseImage": "assets/maps/templates/template-04-urban.webp",
         "title": "索马湾 · 旅行路线",
-        "ariaLabel": "索马湾模板化旅行路线示意图，共3天",
-        "description": "红海酒店、码头、海域与赫尔格达机场。",
+        "ariaLabel": "索马湾模板化旅行路线示意图，共1天",
+        "description": "红海酒店与赫尔格达机场。",
         "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
         "heading": {
           "text": "SOMA BAY / 索马湾",
@@ -2655,62 +2549,29 @@
         "annotations": [],
         "routes": [
           {
-            "day": 5,
-            "mode": "local",
-            "color": "#8865a5",
-            "placeIds": [
-              "hotel-sheraton-soma",
-              "place-soma-marina",
-              "place-red-sea-reef"
-            ],
-            "paths": [
-              "M982.56 843.51 C947.6 844.9 915.1 836.7 886.84 819.47 C949.1 817.9 1006.0 799.7 1054.11 765.79"
-            ],
-            "overviewPaths": [
-              "M982.56 843.51 C947.6 844.9 915.1 836.7 886.84 819.47 C949.1 817.9 1006.0 799.7 1054.11 765.79"
-            ]
-          },
-          {
-            "day": 6,
-            "mode": "local",
-            "color": "#df6185",
-            "placeIds": [
-              "hotel-sheraton-soma",
-              "place-red-sea-reef",
-              "place-soma-beach"
-            ],
-            "paths": [
-              "M982.56 843.51 C1014.7 824.2 1039.0 797.8 1054.11 765.79 C1018.4 770.3 984.4 764.7 953.95 749.45"
-            ],
-            "overviewPaths": [
-              "M982.56 843.51 C1014.7 824.2 1039.0 797.8 1054.11 765.79 C1018.4 770.3 984.4 764.7 953.95 749.45"
-            ]
-          },
-          {
             "day": 7,
             "mode": "local",
             "color": "#397dc1",
             "placeIds": [
               "hotel-sheraton-soma",
-              "place-red-sea-reef",
               "place-hurghada-airport"
             ],
             "paths": [
-              "M982.56 843.51 C999.1 809.9 1023.4 783.5 1054.11 765.79 C938.7 570.0 799.7 392.8 645.26 244.45"
+              "M963.78 749.35 C856.6 612.7 775.8 461.8 726.22 305.65"
             ],
             "overviewPaths": [
-              "M982.56 843.51 C999.1 809.9 1023.4 783.5 1054.11 765.79 C938.7 570.0 799.7 392.8 645.26 244.45"
+              "M963.78 749.35 C856.6 612.7 775.8 461.8 726.22 305.65"
             ]
           }
         ],
         "places": [
           {
             "id": "hotel-sheraton-soma",
-            "x": 982.56,
-            "y": 843.51,
-            "color": "#8865a5",
-            "tx": 1014.56,
-            "ty": 811.51,
+            "x": 963.78,
+            "y": 749.35,
+            "color": "#397dc1",
+            "tx": 995.78,
+            "ty": 717.35,
             "size": 24,
             "anchor": "start",
             "lines": [
@@ -2723,88 +2584,18 @@
               "lng": 33.9988
             },
             "days": [
-              5,
-              6,
               7
-            ]
-          },
-          {
-            "id": "place-soma-marina",
-            "x": 886.84,
-            "y": 819.47,
-            "color": "#8865a5",
-            "tx": 854.84,
-            "ty": 787.47,
-            "size": 24,
-            "anchor": "end",
-            "lines": [
-              "Soma Bay Marina /",
-              "索马湾码头"
-            ],
-            "query": "Soma Bay Marina 索马湾",
-            "geo": {
-              "lat": 26.849,
-              "lng": 33.992
-            },
-            "days": [
-              5
-            ]
-          },
-          {
-            "id": "place-red-sea-reef",
-            "x": 1054.11,
-            "y": 765.79,
-            "color": "#8865a5",
-            "tx": 1132.11,
-            "ty": 703.79,
-            "size": 24,
-            "anchor": "start",
-            "lines": [
-              "Red Sea Reef Area /",
-              "红海海域"
-            ],
-            "query": "Red Sea Reef Area 索马湾",
-            "geo": {
-              "lat": 26.873,
-              "lng": 34.062
-            },
-            "days": [
-              5,
-              6,
-              7
-            ]
-          },
-          {
-            "id": "place-soma-beach",
-            "x": 953.95,
-            "y": 749.45,
-            "color": "#df6185",
-            "tx": 875.95,
-            "ty": 687.45,
-            "size": 24,
-            "anchor": "end",
-            "lines": [
-              "Soma Bay Beach /",
-              "索马湾海滩"
-            ],
-            "query": "Soma Bay Beach 索马湾",
-            "geo": {
-              "lat": 26.855,
-              "lng": 33.997
-            },
-            "days": [
-              6
             ]
           },
           {
             "id": "place-hurghada-airport",
-            "x": 645.26,
-            "y": 244.45,
+            "x": 726.22,
+            "y": 305.65,
             "color": "#397dc1",
-            "tx": 783.26,
-            "ty": 156.45,
+            "tx": 694.22,
+            "ty": 273.65,
             "size": 24,
-            "anchor": "start",
+            "anchor": "end",
             "lines": [
               "Hurghada Airport T2 /",
               "赫尔格达机场 T2"
@@ -2821,117 +2612,31 @@
         ],
         "overviewPlaceIds": [
           "hotel-sheraton-soma",
-          "place-soma-marina",
-          "place-red-sea-reef",
-          "place-soma-beach",
           "place-hurghada-airport"
         ],
         "dailyLayouts": {
-          "5": {
-            "places": [
-              "hotel-sheraton-soma",
-              "place-soma-marina",
-              "place-red-sea-reef"
-            ],
-            "labels": {
-              "hotel-sheraton-soma": {
-                "x": 1014.56,
-                "y": 811.51,
-                "anchor": "start"
-              },
-              "place-soma-marina": {
-                "x": 854.84,
-                "y": 787.47,
-                "anchor": "end"
-              },
-              "place-red-sea-reef": {
-                "x": 1132.11,
-                "y": 703.79,
-                "anchor": "start"
-              }
-            },
-            "transport": [
-              {
-                "items": [],
-                "x": 934.7,
-                "y": 831.49
-              },
-              {
-                "items": [],
-                "x": 970.47,
-                "y": 792.63
-              }
-            ]
-          },
-          "6": {
-            "places": [
-              "hotel-sheraton-soma",
-              "place-red-sea-reef",
-              "place-soma-beach"
-            ],
-            "labels": {
-              "hotel-sheraton-soma": {
-                "x": 1014.56,
-                "y": 811.51,
-                "anchor": "start"
-              },
-              "place-red-sea-reef": {
-                "x": 1132.11,
-                "y": 703.79,
-                "anchor": "start"
-              },
-              "place-soma-beach": {
-                "x": 875.95,
-                "y": 687.45,
-                "anchor": "end"
-              }
-            },
-            "transport": [
-              {
-                "items": [],
-                "x": 1018.33,
-                "y": 804.65
-              },
-              {
-                "items": [],
-                "x": 1004.03,
-                "y": 757.62
-              }
-            ]
-          },
           "7": {
             "places": [
               "hotel-sheraton-soma",
-              "place-red-sea-reef",
               "place-hurghada-airport"
             ],
             "labels": {
               "hotel-sheraton-soma": {
-                "x": 1014.56,
-                "y": 811.51,
-                "anchor": "start"
-              },
-              "place-red-sea-reef": {
-                "x": 1132.11,
-                "y": 703.79,
+                "x": 995.78,
+                "y": 717.35,
                 "anchor": "start"
               },
               "place-hurghada-airport": {
-                "x": 783.26,
-                "y": 156.45,
-                "anchor": "start"
+                "x": 694.22,
+                "y": 273.65,
+                "anchor": "end"
               }
             },
             "transport": [
               {
                 "items": [],
-                "x": 1018.33,
-                "y": 804.65
-              },
-              {
-                "items": [],
-                "x": 849.68,
-                "y": 505.12
+                "x": 845,
+                "y": 527.5
               }
             ]
           }
