@@ -1,0 +1,1398 @@
+{
+  "$schema": "./schemas/trip-data.schema.json",
+  "schemaVersion": "2.0-lite",
+  "config": {
+    "schemaVersion": "1.0.0",
+    "modules": {
+      "flights": true,
+      "overview": true,
+      "itinerary": true,
+      "todo": false,
+      "driving": false,
+      "ledger": true
+    },
+    "language": "zh-CN",
+    "persistence": {
+      "mode": "local"
+    }
+  },
+  "metadata": {
+    "tripId": "egypt-2026-cairo-luxor-soma-bay",
+    "title": "埃及之旅 · 开罗 · 卢克索 · 索马湾",
+    "language": "zh-CN",
+    "assets": {
+      "routeMaps": [
+        "assets/maps/templates/template-07-compact-basin.webp"
+      ]
+    }
+  },
+  "trip": {
+    "status": "draft",
+    "startDate": "2026-09-30",
+    "endDate": "2026-10-07",
+    "dayCount": 8,
+    "nightCountAway": 7,
+    "countries": [
+      {
+        "code": "EG",
+        "name": "Egypt",
+        "nameZh": "埃及",
+        "nameEn": "Egypt"
+      }
+    ],
+    "primaryDestinationCountries": [
+      "EG"
+    ],
+    "citiesAndAreas": [
+      "开罗",
+      "卢克索",
+      "索马湾"
+    ],
+    "routeSummary": "开罗 → 卢克索 → 索马湾 → 开罗",
+    "groupSize": null
+  },
+  "flightJourneys": [
+    {
+      "id": "jny-outbound"
+    },
+    {
+      "id": "jny-cairo-luxor"
+    },
+    {
+      "id": "jny-hurghada-cairo"
+    },
+    {
+      "id": "jny-return"
+    }
+  ],
+  "flights": [
+    {
+      "id": "flt-ca829-pek-cai",
+      "journeyId": "jny-outbound",
+      "sequence": 1,
+      "airline": {
+        "name": "Air China",
+        "nameZh": "中国国际航空"
+      },
+      "flightNumber": "CA829",
+      "departure": {
+        "airportCode": "PEK",
+        "city": "北京",
+        "date": "2026-09-30",
+        "time": "02:30",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "CAI",
+        "city": "开罗",
+        "date": "2026-09-30",
+        "time": "09:15",
+        "utcOffset": "+02:00"
+      }
+    },
+    {
+      "id": "flt-sm064-cai-lxr",
+      "journeyId": "jny-cairo-luxor",
+      "sequence": 1,
+      "airline": {
+        "name": "Air Cairo",
+        "nameZh": "开罗航空"
+      },
+      "flightNumber": "SM064",
+      "departure": {
+        "airportCode": "CAI",
+        "city": "开罗",
+        "date": "2026-10-01",
+        "time": "20:10",
+        "utcOffset": "+02:00"
+      },
+      "arrival": {
+        "airportCode": "LXR",
+        "city": "卢克索",
+        "date": "2026-10-01",
+        "time": "21:26",
+        "utcOffset": "+02:00"
+      }
+    },
+    {
+      "id": "flt-sm027-hrg-cai",
+      "journeyId": "jny-hurghada-cairo",
+      "sequence": 1,
+      "airline": {
+        "name": "Air Cairo",
+        "nameZh": "开罗航空"
+      },
+      "flightNumber": "SM027",
+      "departure": {
+        "airportCode": "HRG",
+        "city": "赫尔格达",
+        "date": "2026-10-06",
+        "time": "23:00",
+        "utcOffset": "+02:00"
+      },
+      "arrival": {
+        "airportCode": "CAI",
+        "city": "开罗",
+        "date": "2026-10-07",
+        "time": "00:30",
+        "utcOffset": "+02:00"
+      }
+    },
+    {
+      "id": "flt-ca830-cai-pek",
+      "journeyId": "jny-return",
+      "sequence": 1,
+      "airline": {
+        "name": "Air China",
+        "nameZh": "中国国际航空"
+      },
+      "flightNumber": "CA830",
+      "departure": {
+        "airportCode": "CAI",
+        "city": "开罗",
+        "date": "2026-10-07",
+        "time": "14:15",
+        "utcOffset": "+02:00"
+      },
+      "arrival": {
+        "airportCode": "PEK",
+        "city": "北京",
+        "date": "2026-10-08",
+        "time": "05:00",
+        "utcOffset": "+08:00"
+      }
+    }
+  ],
+  "accommodations": [
+    {
+      "name": "Longchamps l Zamalek l Boutique Hotel with Breakfast",
+      "city": "开罗"
+    },
+    {
+      "name": "Steigenberger Nile Palace Luxor",
+      "city": "卢克索"
+    },
+    {
+      "name": "Sheraton Soma Bay",
+      "city": "索马湾"
+    },
+    {
+      "name": "Le Passage Cairo Hotel & Casino",
+      "city": "开罗"
+    }
+  ],
+  "groundTransport": {
+    "rentalCar": null,
+    "rentalChecklist": [],
+    "drivingNotes": [],
+    "drivingReferenceLinks": [],
+    "plannedRoadLegs": [],
+    "publicTransitAndRail": []
+  },
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-09-30",
+      "title": "抵达开罗",
+      "locations": [
+        "北京",
+        "开罗"
+      ],
+      "schedule": [
+        {
+          "id": "d1-item-1",
+          "time": "02:30",
+          "type": "flight",
+          "text": "CA829 北京起飞（PEK）"
+        },
+        {
+          "id": "d1-item-2",
+          "time": "09:15",
+          "type": "transfer",
+          "text": "落地开罗（CAI），入境",
+          "placeIds": [
+            "place-cairo"
+          ]
+        },
+        {
+          "id": "d1-item-3",
+          "time": "上午",
+          "type": "check-in",
+          "text": "入住 Longchamps Zamalek Boutique Hotel with Breakfast",
+          "placeId": "place-cairo"
+        },
+        {
+          "id": "d1-item-4",
+          "time": "中午",
+          "type": "restaurant",
+          "text": "午餐"
+        },
+        {
+          "id": "d1-item-5",
+          "time": "下午",
+          "type": "attraction",
+          "text": "文明博物馆",
+          "placeId": "place-nmec"
+        },
+        {
+          "id": "d1-item-6",
+          "time": "晚上",
+          "type": "restaurant",
+          "text": "晚餐"
+        }
+      ],
+      "costReferences": [
+        {
+          "item": "住宿",
+          "currency": "CNY",
+          "amount": 455
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-10-01",
+      "title": "金字塔与大埃及博物馆",
+      "locations": [
+        "开罗",
+        "卢克索"
+      ],
+      "schedule": [
+        {
+          "id": "d2-item-1",
+          "time": "上午",
+          "type": "attraction",
+          "text": "金字塔",
+          "placeId": "place-giza-pyramids",
+          "ticketIds": [
+            "ticket-giza-pyramids"
+          ]
+        },
+        {
+          "id": "d2-item-2",
+          "time": "下午",
+          "type": "attraction",
+          "text": "大埃及博物馆（visit-gem.com）",
+          "placeId": "place-gem",
+          "ticketIds": [
+            "ticket-gem"
+          ]
+        },
+        {
+          "id": "d2-item-3",
+          "time": "20:10",
+          "type": "flight",
+          "text": "SM064 开罗机场 T3 起飞",
+          "placeId": "place-cairo-airport"
+        },
+        {
+          "id": "d2-item-4",
+          "time": "21:26",
+          "type": "transfer",
+          "text": "抵达卢克索，入住 Steigenberger Nile Palace Luxor",
+          "placeId": "place-luxor"
+        }
+      ],
+      "costReferences": [
+        {
+          "item": "交通",
+          "currency": "CNY",
+          "amount": 1862
+        },
+        {
+          "item": "住宿",
+          "currency": "CNY",
+          "amount": 906
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2026-10-02",
+      "title": "卢克索西岸",
+      "locations": [
+        "卢克索",
+        "卢克索"
+      ],
+      "schedule": [
+        {
+          "id": "d3-item-1",
+          "time": "上午",
+          "type": "attraction",
+          "text": "帝王谷",
+          "placeId": "place-valley-kings",
+          "ticketIds": [
+            "ticket-valley-kings"
+          ]
+        },
+        {
+          "id": "d3-item-2",
+          "time": "中午",
+          "type": "attraction",
+          "text": "女王神庙",
+          "placeId": "place-hatshepsut",
+          "ticketIds": [
+            "ticket-hatshepsut"
+          ]
+        },
+        {
+          "id": "d3-item-3",
+          "time": "下午",
+          "type": "attraction",
+          "text": "哈布城（Medinet Habu）",
+          "placeId": "place-medinet-habu",
+          "ticketIds": [
+            "ticket-medinet-habu"
+          ]
+        },
+        {
+          "id": "d3-item-4",
+          "time": "傍晚",
+          "type": "attraction",
+          "text": "尼罗河落日帆船（Felucca）"
+        }
+      ],
+      "costReferences": [
+        {
+          "item": "住宿",
+          "currency": "CNY",
+          "amount": 906
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2026-10-03",
+      "title": "卢克索东岸 → 索马湾",
+      "locations": [
+        "卢克索",
+        "索马湾"
+      ],
+      "schedule": [
+        {
+          "id": "d4-item-1",
+          "time": "上午",
+          "type": "attraction",
+          "text": "卡尔纳克神庙",
+          "placeId": "place-karnak",
+          "ticketIds": [
+            "ticket-karnak"
+          ]
+        },
+        {
+          "id": "d4-item-2",
+          "time": "晚上",
+          "type": "transfer",
+          "text": "包车前往索马湾（约 3.5 小时），入住 Sheraton Soma Bay",
+          "placeId": "place-soma-bay"
+        }
+      ],
+      "costReferences": [
+        {
+          "item": "交通",
+          "currency": "CNY",
+          "amount": 500
+        },
+        {
+          "item": "住宿",
+          "currency": "CNY",
+          "amount": 1666
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2026-10-04",
+      "title": "索马湾出海",
+      "locations": [
+        "索马湾",
+        "索马湾"
+      ],
+      "schedule": [
+        {
+          "id": "d5-item-1",
+          "time": "全天",
+          "type": "attraction",
+          "text": "出海活动",
+          "placeId": "place-soma-bay"
+        }
+      ],
+      "costReferences": [
+        {
+          "item": "住宿",
+          "currency": "CNY",
+          "amount": 1666
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "date": "2026-10-05",
+      "title": "索马湾出海",
+      "locations": [
+        "索马湾",
+        "索马湾"
+      ],
+      "schedule": [
+        {
+          "id": "d6-item-1",
+          "time": "全天",
+          "type": "attraction",
+          "text": "出海活动",
+          "placeId": "place-soma-bay"
+        }
+      ],
+      "costReferences": [
+        {
+          "item": "住宿",
+          "currency": "CNY",
+          "amount": 1666
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "date": "2026-10-06",
+      "title": "返回开罗",
+      "locations": [
+        "索马湾",
+        "开罗"
+      ],
+      "schedule": [
+        {
+          "id": "d7-item-1",
+          "time": "白天",
+          "type": "attraction",
+          "text": "出海活动",
+          "placeId": "place-soma-bay"
+        },
+        {
+          "id": "d7-item-2",
+          "time": "23:00",
+          "type": "flight",
+          "text": "SM027 赫尔格达机场 T2 起飞",
+          "placeId": "place-hurghada-airport"
+        },
+        {
+          "id": "d7-item-3",
+          "time": "00:30",
+          "type": "transfer",
+          "text": "抵达开罗，入住 Le Passage Cairo Hotel & Casino",
+          "placeId": "place-cairo"
+        }
+      ],
+      "costReferences": [
+        {
+          "item": "交通",
+          "currency": "CNY",
+          "amount": 1070
+        },
+        {
+          "item": "住宿",
+          "currency": "CNY",
+          "amount": 814
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "date": "2026-10-07",
+      "title": "返程北京",
+      "locations": [
+        "开罗",
+        "北京"
+      ],
+      "schedule": [
+        {
+          "id": "d8-item-1",
+          "time": "14:15",
+          "type": "flight",
+          "text": "CA830 开罗机场 T3 起飞",
+          "placeId": "place-cairo-airport"
+        }
+      ],
+      "costReferences": [
+        {
+          "item": "交通",
+          "currency": "CNY",
+          "amount": 23137
+        }
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "place-cairo",
+      "name": "Cairo",
+      "nameZh": "开罗",
+      "countryCode": "EG",
+      "cityOrArea": "开罗",
+      "geo": {
+        "lat": 30.0444,
+        "lng": 31.2357
+      }
+    },
+    {
+      "id": "place-cairo-airport",
+      "name": "Cairo International Airport",
+      "nameZh": "开罗国际机场",
+      "countryCode": "EG",
+      "cityOrArea": "开罗",
+      "geo": {
+        "lat": 30.1219,
+        "lng": 31.4056
+      }
+    },
+    {
+      "id": "place-giza-pyramids",
+      "name": "Giza Pyramids",
+      "nameZh": "吉萨金字塔",
+      "countryCode": "EG",
+      "cityOrArea": "开罗",
+      "geo": {
+        "lat": 29.9773,
+        "lng": 31.1325
+      }
+    },
+    {
+      "id": "place-gem",
+      "name": "Grand Egyptian Museum",
+      "nameZh": "大埃及博物馆",
+      "countryCode": "EG",
+      "cityOrArea": "开罗",
+      "geo": {
+        "lat": 29.9936,
+        "lng": 31.1197
+      }
+    },
+    {
+      "id": "place-nmec",
+      "name": "National Museum of Egyptian Civilization",
+      "nameZh": "埃及文明博物馆",
+      "countryCode": "EG",
+      "cityOrArea": "开罗",
+      "geo": {
+        "lat": 30.0064,
+        "lng": 31.2496
+      }
+    },
+    {
+      "id": "place-luxor",
+      "name": "Luxor",
+      "nameZh": "卢克索",
+      "countryCode": "EG",
+      "cityOrArea": "卢克索",
+      "geo": {
+        "lat": 25.6872,
+        "lng": 32.6396
+      }
+    },
+    {
+      "id": "place-valley-kings",
+      "name": "Valley of the Kings",
+      "nameZh": "帝王谷",
+      "countryCode": "EG",
+      "cityOrArea": "卢克索",
+      "geo": {
+        "lat": 25.7402,
+        "lng": 32.6014
+      }
+    },
+    {
+      "id": "place-hatshepsut",
+      "name": "Mortuary Temple of Hatshepsut",
+      "nameZh": "女王神庙",
+      "countryCode": "EG",
+      "cityOrArea": "卢克索",
+      "geo": {
+        "lat": 25.7382,
+        "lng": 32.6069
+      }
+    },
+    {
+      "id": "place-medinet-habu",
+      "name": "Medinet Habu",
+      "nameZh": "哈布城",
+      "countryCode": "EG",
+      "cityOrArea": "卢克索",
+      "geo": {
+        "lat": 25.725,
+        "lng": 32.6067
+      }
+    },
+    {
+      "id": "place-karnak",
+      "name": "Karnak Temple",
+      "nameZh": "卡尔纳克神庙",
+      "countryCode": "EG",
+      "cityOrArea": "卢克索",
+      "geo": {
+        "lat": 25.7188,
+        "lng": 32.6582
+      }
+    },
+    {
+      "id": "place-soma-bay",
+      "name": "Soma Bay",
+      "nameZh": "索马湾",
+      "countryCode": "EG",
+      "cityOrArea": "索马湾",
+      "geo": {
+        "lat": 26.8557,
+        "lng": 33.9791
+      }
+    },
+    {
+      "id": "place-hurghada-airport",
+      "name": "Hurghada International Airport",
+      "nameZh": "赫尔格达机场",
+      "countryCode": "EG",
+      "cityOrArea": "赫尔格达",
+      "geo": {
+        "lat": 27.1783,
+        "lng": 33.7994
+      }
+    }
+  ],
+  "restaurants": [],
+  "bookingsAndTickets": [],
+  "ticketPlanning": {
+    "statusStorage": "local",
+    "statusStorageNote": "门票状态默认只保存在当前浏览器。",
+    "items": [
+      {
+        "id": "ticket-giza-pyramids",
+        "day": 2,
+        "name": "吉萨金字塔门票",
+        "requirement": "advance-recommended"
+      },
+      {
+        "id": "ticket-gem",
+        "day": 2,
+        "name": "大埃及博物馆门票",
+        "requirement": "advance-required",
+        "guidance": "官网 visit-gem.com 预约"
+      },
+      {
+        "id": "ticket-valley-kings",
+        "day": 3,
+        "name": "帝王谷门票",
+        "requirement": "needs-confirmation"
+      },
+      {
+        "id": "ticket-hatshepsut",
+        "day": 3,
+        "name": "女王神庙门票",
+        "requirement": "needs-confirmation"
+      },
+      {
+        "id": "ticket-medinet-habu",
+        "day": 3,
+        "name": "哈布城门票",
+        "requirement": "needs-confirmation"
+      },
+      {
+        "id": "ticket-karnak",
+        "day": 4,
+        "name": "卡尔纳克神庙门票",
+        "requirement": "needs-confirmation"
+      }
+    ]
+  },
+  "preTrip": {
+    "packingItems": [],
+    "preparationsExplicitlyMentioned": [],
+    "missingNote": ""
+  },
+  "mapLinks": {
+    "providedGoogleMapsLinks": [],
+    "note": "",
+    "cityLevelNavigationDisabled": false,
+    "navigationPolicy": {
+      "noNavigationTypes": [
+        "flight",
+        "note",
+        "rest"
+      ],
+      "selfNavigationTypes": [
+        "drive",
+        "return",
+        "transfer",
+        "check-in",
+        "check-out",
+        "restaurant",
+        "attraction",
+        "walk",
+        "hike"
+      ]
+    },
+    "navigationPlaces": []
+  },
+  "issuesAndUncertainties": [],
+  "map": {
+    "schemaVersion": "1.0-lite",
+    "mapMode": "template-auto",
+    "templateId": "auto",
+    "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+    "region": {
+      "id": "egypt",
+      "label": "埃及",
+      "countryCode": "EG"
+    },
+    "places": [
+      {
+        "id": "place-cairo",
+        "countryCode": "EG",
+        "geo": {
+          "lat": 30.0444,
+          "lng": 31.2357
+        }
+      },
+      {
+        "id": "place-giza-pyramids",
+        "countryCode": "EG",
+        "geo": {
+          "lat": 29.9773,
+          "lng": 31.1325
+        }
+      },
+      {
+        "id": "place-gem",
+        "countryCode": "EG",
+        "geo": {
+          "lat": 29.9936,
+          "lng": 31.1197
+        }
+      },
+      {
+        "id": "place-luxor",
+        "countryCode": "EG",
+        "geo": {
+          "lat": 25.6872,
+          "lng": 32.6396
+        }
+      },
+      {
+        "id": "place-valley-kings",
+        "countryCode": "EG",
+        "geo": {
+          "lat": 25.7402,
+          "lng": 32.6014
+        }
+      },
+      {
+        "id": "place-hatshepsut",
+        "countryCode": "EG",
+        "geo": {
+          "lat": 25.7382,
+          "lng": 32.6069
+        }
+      },
+      {
+        "id": "place-medinet-habu",
+        "countryCode": "EG",
+        "geo": {
+          "lat": 25.725,
+          "lng": 32.6067
+        }
+      },
+      {
+        "id": "place-karnak",
+        "countryCode": "EG",
+        "geo": {
+          "lat": 25.7188,
+          "lng": 32.6582
+        }
+      },
+      {
+        "id": "place-soma-bay",
+        "countryCode": "EG",
+        "geo": {
+          "lat": 26.8557,
+          "lng": 33.9791
+        }
+      },
+      {
+        "id": "place-hurghada-airport",
+        "countryCode": "EG",
+        "geo": {
+          "lat": 27.1783,
+          "lng": 33.7994
+        }
+      }
+    ],
+    "routes": [
+      {
+        "day": 1,
+        "placeIds": [
+          "place-cairo",
+          "place-giza-pyramids"
+        ]
+      },
+      {
+        "day": 2,
+        "placeIds": [
+          "place-giza-pyramids",
+          "place-gem",
+          "place-luxor"
+        ]
+      },
+      {
+        "day": 3,
+        "placeIds": [
+          "place-luxor",
+          "place-valley-kings",
+          "place-hatshepsut",
+          "place-medinet-habu"
+        ]
+      },
+      {
+        "day": 4,
+        "placeIds": [
+          "place-karnak",
+          "place-soma-bay"
+        ]
+      },
+      {
+        "day": 7,
+        "placeIds": [
+          "place-soma-bay",
+          "place-hurghada-airport",
+          "place-cairo"
+        ]
+      }
+    ],
+    "dailyRoutes": []
+  },
+  "routeMap": {
+    "defaultRegionId": "egypt",
+    "regions": [
+      {
+        "id": "egypt",
+        "label": "埃及",
+        "countryCode": "EG",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "compact-basin",
+        "mapModeReason": "dense-place-cluster",
+        "mapModeMetrics": {
+          "placeCount": 10,
+          "geoPlaceCount": 10,
+          "widthKm": 282.13,
+          "heightKm": 483.65,
+          "spanKm": 503.75,
+          "averageNearestKm": 10.75,
+          "components": 1,
+          "largestLegKm": 501.61,
+          "jumpRatio": 40.37
+        },
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          7
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-07-compact-basin.webp",
+        "title": "埃及 · 旅行路线",
+        "ariaLabel": "埃及模板化旅行路线示意图，共5天",
+        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "heading": {
+          "text": "埃及",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 1,
+            "color": "#397dc1",
+            "placeIds": [
+              "place-cairo",
+              "place-giza-pyramids"
+            ],
+            "paths": [
+              "M625.35 252.06 C606.2 281.5 580.7 303.4 550.2 316.56"
+            ],
+            "overviewPaths": [
+              "M625.35 252.06 C606.2 281.5 580.7 303.4 550.2 316.56"
+            ]
+          },
+          {
+            "day": 2,
+            "color": "#e77e22",
+            "placeIds": [
+              "place-giza-pyramids",
+              "place-gem",
+              "place-luxor"
+            ],
+            "paths": [
+              "M550.2 316.56 C553.6 282.5 547.5 250.2 532.25 221.59 C630.7 428.0 700.6 643.6 737.88 855.87"
+            ],
+            "overviewPaths": [
+              "M550.2 316.56 C553.6 282.5 547.5 250.2 532.25 221.59 C630.7 428.0 700.6 643.6 737.88 855.87"
+            ]
+          },
+          {
+            "day": 3,
+            "color": "#618344",
+            "placeIds": [
+              "place-luxor",
+              "place-valley-kings",
+              "place-hatshepsut",
+              "place-medinet-habu"
+            ],
+            "paths": [
+              "M737.88 855.87 C700.2 810.0 677.9 757.6 672.33 701.71 C713.4 754.5 765.5 792.0 825.58 811.98 C767.5 824.7 710.6 820.6 658.17 800.1"
+            ],
+            "overviewPaths": [
+              "M737.88 855.87 C700.2 810.0 677.9 757.6 672.33 701.71 C713.4 754.5 765.5 792.0 825.58 811.98 C767.5 824.7 710.6 820.6 658.17 800.1"
+            ]
+          },
+          {
+            "day": 4,
+            "color": "#209aaa",
+            "placeIds": [
+              "place-karnak",
+              "place-soma-bay"
+            ],
+            "paths": [
+              "M745.79 759.08 C802.6 744.0 850.8 714.8 887.58 673.12"
+            ],
+            "overviewPaths": [
+              "M745.79 759.08 C802.6 744.0 850.8 714.8 887.58 673.12"
+            ]
+          },
+          {
+            "day": 7,
+            "color": "#397dc1",
+            "placeIds": [
+              "place-soma-bay",
+              "place-hurghada-airport",
+              "place-cairo"
+            ],
+            "paths": [
+              "M887.58 673.12 C863.8 647.4 848.9 617.2 843.68 584.46 C794.5 455.0 720.3 342.0 625.35 252.06"
+            ],
+            "overviewPaths": [
+              "M887.58 673.12 C863.8 647.4 848.9 617.2 843.68 584.46 C794.5 455.0 720.3 342.0 625.35 252.06"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "place-cairo",
+            "x": 625.35,
+            "y": 252.06,
+            "color": "#397dc1",
+            "tx": 657.35,
+            "ty": 220.06,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "place-cairo"
+            ],
+            "query": "place-cairo 埃及",
+            "geo": {
+              "lat": 30.0444,
+              "lng": 31.2357
+            },
+            "days": [
+              1,
+              7
+            ]
+          },
+          {
+            "id": "place-giza-pyramids",
+            "x": 550.2,
+            "y": 316.56,
+            "color": "#397dc1",
+            "tx": 518.2,
+            "ty": 284.56,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "place-giza-pyramids"
+            ],
+            "query": "place-giza-pyramids 埃及",
+            "geo": {
+              "lat": 29.9773,
+              "lng": 31.1325
+            },
+            "days": [
+              1,
+              2
+            ]
+          },
+          {
+            "id": "place-gem",
+            "x": 532.25,
+            "y": 221.59,
+            "color": "#e77e22",
+            "tx": 610.25,
+            "ty": 159.59,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "place-gem"
+            ],
+            "query": "place-gem 埃及",
+            "geo": {
+              "lat": 29.9936,
+              "lng": 31.1197
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "place-luxor",
+            "x": 737.88,
+            "y": 855.87,
+            "color": "#e77e22",
+            "tx": 659.88,
+            "ty": 931.87,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "place-luxor"
+            ],
+            "query": "place-luxor 埃及",
+            "geo": {
+              "lat": 25.6872,
+              "lng": 32.6396
+            },
+            "days": [
+              2,
+              3
+            ]
+          },
+          {
+            "id": "place-valley-kings",
+            "x": 672.33,
+            "y": 701.71,
+            "color": "#618344",
+            "tx": 534.33,
+            "ty": 613.71,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "place-valley-kings"
+            ],
+            "query": "place-valley-kings 埃及",
+            "geo": {
+              "lat": 25.7402,
+              "lng": 32.6014
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "place-hatshepsut",
+            "x": 825.58,
+            "y": 811.98,
+            "color": "#618344",
+            "tx": 963.58,
+            "ty": 913.98,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "place-hatshepsut"
+            ],
+            "query": "place-hatshepsut 埃及",
+            "geo": {
+              "lat": 25.7382,
+              "lng": 32.6069
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "place-medinet-habu",
+            "x": 658.17,
+            "y": 800.1,
+            "color": "#618344",
+            "tx": 626.17,
+            "ty": 768.1,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "place-medinet-habu"
+            ],
+            "query": "place-medinet-habu 埃及",
+            "geo": {
+              "lat": 25.725,
+              "lng": 32.6067
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "place-karnak",
+            "x": 745.79,
+            "y": 759.08,
+            "color": "#209aaa",
+            "tx": 607.79,
+            "ty": 861.08,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "place-karnak"
+            ],
+            "query": "place-karnak 埃及",
+            "geo": {
+              "lat": 25.7188,
+              "lng": 32.6582
+            },
+            "days": [
+              4
+            ]
+          },
+          {
+            "id": "place-soma-bay",
+            "x": 887.58,
+            "y": 673.12,
+            "color": "#209aaa",
+            "tx": 965.58,
+            "ty": 611.12,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "place-soma-bay"
+            ],
+            "query": "place-soma-bay 埃及",
+            "geo": {
+              "lat": 26.8557,
+              "lng": 33.9791
+            },
+            "days": [
+              4,
+              7
+            ]
+          },
+          {
+            "id": "place-hurghada-airport",
+            "x": 843.68,
+            "y": 584.46,
+            "color": "#397dc1",
+            "tx": 765.68,
+            "ty": 522.46,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "place-hurghada-airport"
+            ],
+            "query": "place-hurghada-airport 埃及",
+            "geo": {
+              "lat": 27.1783,
+              "lng": 33.7994
+            },
+            "days": [
+              7
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "place-cairo",
+          "place-giza-pyramids",
+          "place-gem",
+          "place-luxor",
+          "place-valley-kings",
+          "place-hatshepsut",
+          "place-medinet-habu",
+          "place-karnak",
+          "place-soma-bay",
+          "place-hurghada-airport"
+        ],
+        "dailyLayouts": {
+          "1": {
+            "places": [
+              "place-cairo",
+              "place-giza-pyramids"
+            ],
+            "labels": {
+              "place-cairo": {
+                "x": 657.35,
+                "y": 220.06,
+                "anchor": "start"
+              },
+              "place-giza-pyramids": {
+                "x": 518.2,
+                "y": 284.56,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 587.78,
+                "y": 284.31
+              }
+            ]
+          },
+          "2": {
+            "places": [
+              "place-giza-pyramids",
+              "place-gem",
+              "place-luxor"
+            ],
+            "labels": {
+              "place-giza-pyramids": {
+                "x": 518.2,
+                "y": 284.56,
+                "anchor": "end"
+              },
+              "place-gem": {
+                "x": 610.25,
+                "y": 159.59,
+                "anchor": "start"
+              },
+              "place-luxor": {
+                "x": 659.88,
+                "y": 931.87,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 541.23,
+                "y": 269.07
+              },
+              {
+                "items": [],
+                "x": 635.07,
+                "y": 538.73
+              }
+            ]
+          },
+          "3": {
+            "places": [
+              "place-luxor",
+              "place-valley-kings",
+              "place-hatshepsut",
+              "place-medinet-habu"
+            ],
+            "labels": {
+              "place-luxor": {
+                "x": 659.88,
+                "y": 931.87,
+                "anchor": "end"
+              },
+              "place-valley-kings": {
+                "x": 534.33,
+                "y": 613.71,
+                "anchor": "end"
+              },
+              "place-hatshepsut": {
+                "x": 963.58,
+                "y": 913.98,
+                "anchor": "start"
+              },
+              "place-medinet-habu": {
+                "x": 626.17,
+                "y": 768.1,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 705.11,
+                "y": 778.79
+              },
+              {
+                "items": [],
+                "x": 748.96,
+                "y": 756.85
+              },
+              {
+                "items": [],
+                "x": 741.88,
+                "y": 806.04
+              }
+            ]
+          },
+          "4": {
+            "places": [
+              "place-karnak",
+              "place-soma-bay"
+            ],
+            "labels": {
+              "place-karnak": {
+                "x": 607.79,
+                "y": 861.08,
+                "anchor": "end"
+              },
+              "place-soma-bay": {
+                "x": 965.58,
+                "y": 611.12,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 816.68,
+                "y": 716.1
+              }
+            ]
+          },
+          "7": {
+            "places": [
+              "place-soma-bay",
+              "place-hurghada-airport",
+              "place-cairo"
+            ],
+            "labels": {
+              "place-soma-bay": {
+                "x": 965.58,
+                "y": 611.12,
+                "anchor": "start"
+              },
+              "place-hurghada-airport": {
+                "x": 765.68,
+                "y": 522.46,
+                "anchor": "end"
+              },
+              "place-cairo": {
+                "x": 657.35,
+                "y": 220.06,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 865.63,
+                "y": 628.79
+              },
+              {
+                "items": [],
+                "x": 734.51,
+                "y": 418.26
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

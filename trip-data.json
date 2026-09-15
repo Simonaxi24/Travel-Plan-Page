@@ -1,0 +1,2942 @@
+{
+  "$schema": "./schemas/trip-data.schema.json",
+  "schemaVersion": "2.0-lite",
+  "config": {
+    "schemaVersion": "1.0.0",
+    "modules": {
+      "flights": true,
+      "overview": true,
+      "itinerary": true,
+      "todo": true,
+      "driving": false,
+      "ledger": true
+    },
+    "language": "zh-CN",
+    "persistence": {
+      "mode": "local"
+    }
+  },
+  "metadata": {
+    "tripId": "egypt-2026-cairo-luxor-soma-bay",
+    "title": "埃及之旅 · 开罗 · 卢克索 · 索马湾",
+    "language": "zh-CN",
+    "assets": {
+      "routeMaps": [
+        "assets/maps/templates/template-03-coastal.webp",
+        "assets/maps/templates/template-06-upland-basin.webp",
+        "assets/maps/templates/template-07-compact-basin.webp",
+        "assets/maps/templates/template-04-urban.webp"
+      ]
+    }
+  },
+  "trip": {
+    "status": "draft",
+    "startDate": "2026-09-30",
+    "endDate": "2026-10-07",
+    "dayCount": 8,
+    "nightCountAway": 7,
+    "countries": [
+      {
+        "code": "EG",
+        "name": "Egypt",
+        "nameZh": "埃及",
+        "nameEn": "Egypt"
+      }
+    ],
+    "primaryDestinationCountries": [
+      "EG"
+    ],
+    "citiesAndAreas": [
+      "开罗",
+      "吉萨",
+      "卢克索",
+      "索马湾",
+      "赫尔格达"
+    ],
+    "routeSummary": "北京 → 开罗 → 卢克索 → 索马湾 → 赫尔格达 → 开罗 → 北京",
+    "groupSize": null
+  },
+  "flightJourneys": [
+    {
+      "id": "jny-outbound"
+    },
+    {
+      "id": "jny-cairo-luxor"
+    },
+    {
+      "id": "jny-hurghada-cairo"
+    },
+    {
+      "id": "jny-return"
+    }
+  ],
+  "flights": [
+    {
+      "id": "flt-ca829-pek-cai",
+      "journeyId": "jny-outbound",
+      "sequence": 1,
+      "airline": {
+        "name": "Air China",
+        "nameZh": "中国国际航空"
+      },
+      "flightNumber": "CA829",
+      "departure": {
+        "airportCode": "PEK",
+        "city": "北京",
+        "date": "2026-09-30",
+        "time": "02:30",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "CAI",
+        "city": "开罗",
+        "date": "2026-09-30",
+        "time": "09:15",
+        "utcOffset": "+02:00"
+      }
+    },
+    {
+      "id": "flt-sm064-cai-lxr",
+      "journeyId": "jny-cairo-luxor",
+      "sequence": 1,
+      "airline": {
+        "name": "Air Cairo",
+        "nameZh": "开罗航空"
+      },
+      "flightNumber": "SM064",
+      "departure": {
+        "airportCode": "CAI",
+        "city": "开罗",
+        "date": "2026-10-01",
+        "time": "20:10",
+        "utcOffset": "+02:00"
+      },
+      "arrival": {
+        "airportCode": "LXR",
+        "city": "卢克索",
+        "date": "2026-10-01",
+        "time": "21:26",
+        "utcOffset": "+02:00"
+      }
+    },
+    {
+      "id": "flt-sm027-hrg-cai",
+      "journeyId": "jny-hurghada-cairo",
+      "sequence": 1,
+      "airline": {
+        "name": "Air Cairo",
+        "nameZh": "开罗航空"
+      },
+      "flightNumber": "SM027",
+      "departure": {
+        "airportCode": "HRG",
+        "city": "赫尔格达",
+        "date": "2026-10-06",
+        "time": "23:00",
+        "utcOffset": "+02:00"
+      },
+      "arrival": {
+        "airportCode": "CAI",
+        "city": "开罗",
+        "date": "2026-10-07",
+        "time": "00:30",
+        "utcOffset": "+02:00"
+      }
+    },
+    {
+      "id": "flt-ca830-cai-pek",
+      "journeyId": "jny-return",
+      "sequence": 1,
+      "airline": {
+        "name": "Air China",
+        "nameZh": "中国国际航空"
+      },
+      "flightNumber": "CA830",
+      "departure": {
+        "airportCode": "CAI",
+        "city": "开罗",
+        "date": "2026-10-07",
+        "time": "14:15",
+        "utcOffset": "+02:00"
+      },
+      "arrival": {
+        "airportCode": "PEK",
+        "city": "北京",
+        "date": "2026-10-08",
+        "time": "05:00",
+        "utcOffset": "+08:00"
+      }
+    }
+  ],
+  "accommodations": [
+    {
+      "name": "Longchamps | Zamalek | Boutique Hotel with Breakfast",
+      "city": "开罗",
+      "placeId": "hotel-longchamps",
+      "budget": 455
+    },
+    {
+      "name": "Steigenberger Nile Palace Luxor",
+      "city": "卢克索",
+      "placeId": "hotel-nile-palace",
+      "budget": 906
+    },
+    {
+      "name": "Steigenberger Nile Palace Luxor",
+      "city": "卢克索",
+      "placeId": "hotel-nile-palace",
+      "budget": 906
+    },
+    {
+      "name": "Sheraton Soma Bay",
+      "city": "索马湾",
+      "placeId": "hotel-sheraton-soma",
+      "budget": 1666
+    },
+    {
+      "name": "Sheraton Soma Bay",
+      "city": "索马湾",
+      "placeId": "hotel-sheraton-soma",
+      "budget": 1666
+    },
+    {
+      "name": "Sheraton Soma Bay",
+      "city": "索马湾",
+      "placeId": "hotel-sheraton-soma",
+      "budget": 1666
+    },
+    {
+      "name": "Le Passage Cairo Hotel & Casino",
+      "city": "开罗",
+      "placeId": "hotel-le-passage",
+      "budget": 814
+    }
+  ],
+  "groundTransport": {
+    "rentalCar": {
+      "company": "包车接送 / Private Transfer",
+      "confirmationNumber": "",
+      "rentalPeriodDays": 1,
+      "unlimitedKilometers": false,
+      "vehicle": {
+        "class": "私家车 / Van",
+        "example": "Luxor → Soma Bay transfer"
+      },
+      "pickup": {
+        "date": "2026-10-03",
+        "time": "18:00",
+        "utcOffset": "+02:00",
+        "location": "Steigenberger Nile Palace Luxor",
+        "address": "Luxor, Egypt"
+      },
+      "dropoff": {
+        "date": "2026-10-03",
+        "time": "21:30",
+        "utcOffset": "+02:00",
+        "timeZoneLabel": "Egypt Time UTC+02:00",
+        "vehicleReturnPoint": "Sheraton Soma Bay",
+        "recommendedArrivalTime": "21:30",
+        "deadlineWarning": "请提前确认司机联系方式、上车点与行李空间。"
+      },
+      "price": {
+        "currency": "CNY",
+        "payAtCounter": 500
+      },
+      "insurance": [
+        "包车信息来自 Excel：晚包车 3.5h；不是自驾租车订单。",
+        "如改成正式租车，可在这里补充保险、押金、还车规则。"
+      ],
+      "kind": "private-transfer"
+    },
+    "rentalChecklist": [
+      "确认司机姓名与车牌。",
+      "确认酒店上车点。",
+      "准备现金或线上支付凭证。",
+      "保留司机联系电话。"
+    ],
+    "drivingNotes": [
+      "卢克索至索马湾约 3.5 小时，建议预留晚餐和休息时间。",
+      "夜间长途移动建议提前确认路况与休息点。"
+    ],
+    "drivingReferenceLinks": [],
+    "plannedRoadLegs": [
+      {
+        "date": "2026-10-03",
+        "from": "卢克索",
+        "to": "索马湾",
+        "duration": "约 3.5 小时",
+        "budget": 500
+      }
+    ],
+    "publicTransitAndRail": []
+  },
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-09-30",
+      "title": "抵达开罗",
+      "locations": [
+        "北京",
+        "开罗"
+      ],
+      "schedule": [
+        {
+          "id": "d1-item-1",
+          "time": "02:30",
+          "type": "flight",
+          "text": "CA829 北京起飞（PEK）"
+        },
+        {
+          "id": "d1-item-2",
+          "time": "09:15",
+          "type": "transfer",
+          "text": "抵达开罗国际机场 T3，入境",
+          "placeId": "place-cairo-airport"
+        },
+        {
+          "id": "d1-item-3",
+          "time": "中午",
+          "type": "restaurant",
+          "text": "Zamalek 午餐与休整",
+          "placeId": "place-zamalek"
+        },
+        {
+          "id": "d1-item-4",
+          "time": "下午",
+          "type": "attraction",
+          "text": "参观埃及文明博物馆",
+          "placeId": "place-nmec"
+        },
+        {
+          "id": "d1-item-5",
+          "time": "晚上",
+          "type": "restaurant",
+          "text": "晚餐后入住酒店",
+          "placeId": "hotel-longchamps"
+        }
+      ],
+      "costReferences": [
+        {
+          "item": "住宿",
+          "currency": "CNY",
+          "amount": 455
+        }
+      ],
+      "accommodation": {
+        "name": "Longchamps | Zamalek | Boutique Hotel with Breakfast",
+        "city": "开罗",
+        "placeId": "hotel-longchamps",
+        "budget": 455
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-10-01",
+      "title": "金字塔与大埃及博物馆",
+      "locations": [
+        "开罗",
+        "卢克索"
+      ],
+      "schedule": [
+        {
+          "id": "d2-item-1",
+          "time": "上午",
+          "type": "attraction",
+          "text": "吉萨金字塔",
+          "placeId": "place-giza-pyramids"
+        },
+        {
+          "id": "d2-item-2",
+          "time": "下午",
+          "type": "attraction",
+          "text": "大埃及博物馆（visit-gem.com）",
+          "placeId": "place-gem"
+        },
+        {
+          "id": "d2-item-3",
+          "time": "20:10",
+          "type": "flight",
+          "text": "SM064 开罗机场 T3 起飞",
+          "placeId": "place-cairo-airport"
+        },
+        {
+          "id": "d2-item-4",
+          "time": "21:26",
+          "type": "transfer",
+          "text": "抵达卢克索机场，前往酒店",
+          "placeIds": [
+            "place-luxor-airport",
+            "hotel-nile-palace"
+          ]
+        }
+      ],
+      "costReferences": [
+        {
+          "item": "交通",
+          "currency": "CNY",
+          "amount": 1862
+        },
+        {
+          "item": "住宿",
+          "currency": "CNY",
+          "amount": 906
+        }
+      ],
+      "accommodation": {
+        "name": "Steigenberger Nile Palace Luxor",
+        "city": "卢克索",
+        "placeId": "hotel-nile-palace",
+        "budget": 906
+      }
+    },
+    {
+      "day": 3,
+      "date": "2026-10-02",
+      "title": "卢克索西岸",
+      "locations": [
+        "卢克索",
+        "卢克索"
+      ],
+      "schedule": [
+        {
+          "id": "d3-item-1",
+          "time": "上午",
+          "type": "attraction",
+          "text": "西岸：帝王谷",
+          "placeId": "place-valley-kings"
+        },
+        {
+          "id": "d3-item-2",
+          "time": "中午",
+          "type": "attraction",
+          "text": "哈特谢普苏特女王神庙",
+          "placeId": "place-hatshepsut"
+        },
+        {
+          "id": "d3-item-3",
+          "time": "下午",
+          "type": "attraction",
+          "text": "哈布城",
+          "placeId": "place-medinet-habu"
+        },
+        {
+          "id": "d3-item-4",
+          "time": "落日",
+          "type": "activity",
+          "text": "尼罗河落日帆船",
+          "placeId": "place-felucca"
+        }
+      ],
+      "costReferences": [
+        {
+          "item": "住宿",
+          "currency": "CNY",
+          "amount": 906
+        }
+      ],
+      "accommodation": {
+        "name": "Steigenberger Nile Palace Luxor",
+        "city": "卢克索",
+        "placeId": "hotel-nile-palace",
+        "budget": 906
+      }
+    },
+    {
+      "day": 4,
+      "date": "2026-10-03",
+      "title": "卢克索东岸 → 索马湾",
+      "locations": [
+        "卢克索",
+        "索马湾"
+      ],
+      "schedule": [
+        {
+          "id": "d4-item-1",
+          "time": "上午",
+          "type": "attraction",
+          "text": "东岸：卡尔纳克神庙",
+          "placeId": "place-karnak"
+        },
+        {
+          "id": "d4-item-2",
+          "time": "晚上",
+          "type": "transfer",
+          "text": "包车约 3.5 小时前往索马湾，入住 Sheraton Soma Bay",
+          "placeIds": [
+            "hotel-nile-palace",
+            "hotel-sheraton-soma"
+          ]
+        }
+      ],
+      "costReferences": [
+        {
+          "item": "交通",
+          "currency": "CNY",
+          "amount": 500
+        },
+        {
+          "item": "住宿",
+          "currency": "CNY",
+          "amount": 1666
+        }
+      ],
+      "accommodation": {
+        "name": "Sheraton Soma Bay",
+        "city": "索马湾",
+        "placeId": "hotel-sheraton-soma",
+        "budget": 1666
+      }
+    },
+    {
+      "day": 5,
+      "date": "2026-10-04",
+      "title": "索马湾出海",
+      "locations": [
+        "索马湾",
+        "索马湾"
+      ],
+      "schedule": [
+        {
+          "id": "d5-item-1",
+          "time": "白天",
+          "type": "activity",
+          "text": "索马湾出海",
+          "placeIds": [
+            "hotel-sheraton-soma",
+            "place-soma-marina",
+            "place-red-sea-reef"
+          ]
+        }
+      ],
+      "costReferences": [
+        {
+          "item": "住宿",
+          "currency": "CNY",
+          "amount": 1666
+        }
+      ],
+      "accommodation": {
+        "name": "Sheraton Soma Bay",
+        "city": "索马湾",
+        "placeId": "hotel-sheraton-soma",
+        "budget": 1666
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-10-05",
+      "title": "索马湾出海",
+      "locations": [
+        "索马湾",
+        "索马湾"
+      ],
+      "schedule": [
+        {
+          "id": "d6-item-1",
+          "time": "白天",
+          "type": "activity",
+          "text": "继续出海或海滩休闲",
+          "placeIds": [
+            "hotel-sheraton-soma",
+            "place-red-sea-reef",
+            "place-soma-beach"
+          ]
+        }
+      ],
+      "costReferences": [
+        {
+          "item": "住宿",
+          "currency": "CNY",
+          "amount": 1666
+        }
+      ],
+      "accommodation": {
+        "name": "Sheraton Soma Bay",
+        "city": "索马湾",
+        "placeId": "hotel-sheraton-soma",
+        "budget": 1666
+      }
+    },
+    {
+      "day": 7,
+      "date": "2026-10-06",
+      "title": "返回开罗",
+      "locations": [
+        "索马湾",
+        "开罗"
+      ],
+      "schedule": [
+        {
+          "id": "d7-item-1",
+          "time": "白天",
+          "type": "activity",
+          "text": "索马湾出海或休整",
+          "placeIds": [
+            "hotel-sheraton-soma",
+            "place-red-sea-reef"
+          ]
+        },
+        {
+          "id": "d7-item-2",
+          "time": "23:00",
+          "type": "flight",
+          "text": "SM027 赫尔格达机场 T2 起飞",
+          "placeId": "place-hurghada-airport"
+        },
+        {
+          "id": "d7-item-3",
+          "time": "夜间",
+          "type": "transfer",
+          "text": "抵达开罗后入住 Le Passage Cairo Hotel & Casino",
+          "placeIds": [
+            "place-cairo-airport",
+            "hotel-le-passage"
+          ]
+        }
+      ],
+      "costReferences": [
+        {
+          "item": "交通",
+          "currency": "CNY",
+          "amount": 1070
+        },
+        {
+          "item": "住宿",
+          "currency": "CNY",
+          "amount": 814
+        }
+      ],
+      "accommodation": {
+        "name": "Le Passage Cairo Hotel & Casino",
+        "city": "开罗",
+        "placeId": "hotel-le-passage",
+        "budget": 814
+      }
+    },
+    {
+      "day": 8,
+      "date": "2026-10-07",
+      "title": "返程北京",
+      "locations": [
+        "开罗",
+        "北京"
+      ],
+      "schedule": [
+        {
+          "id": "d8-item-1",
+          "time": "上午",
+          "type": "transfer",
+          "text": "从开罗机场酒店前往 T3",
+          "placeIds": [
+            "hotel-le-passage",
+            "place-cairo-airport"
+          ]
+        },
+        {
+          "id": "d8-item-2",
+          "time": "14:15",
+          "type": "flight",
+          "text": "CA830 开罗机场 T3 起飞，返回北京",
+          "placeId": "place-cairo-airport"
+        }
+      ],
+      "costReferences": [
+        {
+          "item": "交通",
+          "currency": "CNY",
+          "amount": 23137
+        }
+      ],
+      "accommodation": {
+        "name": "返程航班",
+        "city": "北京",
+        "placeId": "city-beijing"
+      }
+    }
+  ],
+  "places": [
+    {
+      "id": "city-beijing",
+      "name": "Beijing",
+      "nameZh": "北京",
+      "countryCode": "CN",
+      "cityOrArea": "北京",
+      "geo": {
+        "lat": 39.9042,
+        "lng": 116.4074
+      },
+      "navigation": {
+        "query": "Beijing Capital International Airport"
+      }
+    },
+    {
+      "id": "city-cairo",
+      "name": "Cairo",
+      "nameZh": "开罗",
+      "countryCode": "EG",
+      "cityOrArea": "开罗",
+      "geo": {
+        "lat": 30.0444,
+        "lng": 31.2357
+      },
+      "navigation": {
+        "query": "Cairo, Egypt"
+      }
+    },
+    {
+      "id": "city-luxor",
+      "name": "Luxor",
+      "nameZh": "卢克索",
+      "countryCode": "EG",
+      "cityOrArea": "卢克索",
+      "geo": {
+        "lat": 25.6872,
+        "lng": 32.6396
+      },
+      "navigation": {
+        "query": "Luxor, Egypt"
+      }
+    },
+    {
+      "id": "city-soma-bay",
+      "name": "Soma Bay",
+      "nameZh": "索马湾",
+      "countryCode": "EG",
+      "cityOrArea": "索马湾",
+      "geo": {
+        "lat": 26.848,
+        "lng": 33.989
+      },
+      "navigation": {
+        "query": "Soma Bay, Egypt"
+      }
+    },
+    {
+      "id": "city-hurghada",
+      "name": "Hurghada",
+      "nameZh": "赫尔格达",
+      "countryCode": "EG",
+      "cityOrArea": "赫尔格达",
+      "geo": {
+        "lat": 27.2579,
+        "lng": 33.8116
+      },
+      "navigation": {
+        "query": "Hurghada, Egypt"
+      }
+    },
+    {
+      "id": "place-cairo-airport",
+      "name": "Cairo International Airport T3",
+      "nameZh": "开罗国际机场 T3",
+      "countryCode": "EG",
+      "cityOrArea": "开罗",
+      "geo": {
+        "lat": 30.1115,
+        "lng": 31.4139
+      },
+      "navigation": {
+        "query": "Cairo International Airport T3, Egypt"
+      }
+    },
+    {
+      "id": "place-zamalek",
+      "name": "Zamalek",
+      "nameZh": "扎马雷克",
+      "countryCode": "EG",
+      "cityOrArea": "开罗",
+      "geo": {
+        "lat": 30.0634,
+        "lng": 31.2195
+      },
+      "navigation": {
+        "query": "Zamalek, Egypt"
+      }
+    },
+    {
+      "id": "hotel-longchamps",
+      "name": "Longchamps Zamalek Boutique Hotel",
+      "nameZh": "Longchamps Zamalek 精品酒店",
+      "countryCode": "EG",
+      "cityOrArea": "开罗",
+      "geo": {
+        "lat": 30.0637,
+        "lng": 31.2201
+      },
+      "navigation": {
+        "query": "Longchamps Zamalek Boutique Hotel, Egypt"
+      }
+    },
+    {
+      "id": "place-nmec",
+      "name": "National Museum of Egyptian Civilization",
+      "nameZh": "埃及文明博物馆",
+      "countryCode": "EG",
+      "cityOrArea": "开罗",
+      "geo": {
+        "lat": 30.0076,
+        "lng": 31.2477
+      },
+      "navigation": {
+        "query": "National Museum of Egyptian Civilization, Egypt"
+      }
+    },
+    {
+      "id": "place-giza-pyramids",
+      "name": "Giza Pyramids",
+      "nameZh": "吉萨金字塔",
+      "countryCode": "EG",
+      "cityOrArea": "吉萨",
+      "geo": {
+        "lat": 29.9792,
+        "lng": 31.1342
+      },
+      "navigation": {
+        "query": "Giza Pyramids, Egypt"
+      }
+    },
+    {
+      "id": "place-gem",
+      "name": "Grand Egyptian Museum",
+      "nameZh": "大埃及博物馆",
+      "countryCode": "EG",
+      "cityOrArea": "吉萨",
+      "geo": {
+        "lat": 29.9931,
+        "lng": 31.1196
+      },
+      "navigation": {
+        "query": "Grand Egyptian Museum, Egypt"
+      }
+    },
+    {
+      "id": "place-luxor-airport",
+      "name": "Luxor International Airport",
+      "nameZh": "卢克索机场",
+      "countryCode": "EG",
+      "cityOrArea": "卢克索",
+      "geo": {
+        "lat": 25.671,
+        "lng": 32.7066
+      },
+      "navigation": {
+        "query": "Luxor International Airport, Egypt"
+      }
+    },
+    {
+      "id": "hotel-nile-palace",
+      "name": "Steigenberger Nile Palace Luxor",
+      "nameZh": "尼罗河皇宫酒店",
+      "countryCode": "EG",
+      "cityOrArea": "卢克索",
+      "geo": {
+        "lat": 25.6867,
+        "lng": 32.6313
+      },
+      "navigation": {
+        "query": "Steigenberger Nile Palace Luxor, Egypt"
+      }
+    },
+    {
+      "id": "place-valley-kings",
+      "name": "Valley of the Kings",
+      "nameZh": "帝王谷",
+      "countryCode": "EG",
+      "cityOrArea": "卢克索",
+      "geo": {
+        "lat": 25.7402,
+        "lng": 32.6014
+      },
+      "navigation": {
+        "query": "Valley of the Kings, Egypt"
+      }
+    },
+    {
+      "id": "place-hatshepsut",
+      "name": "Mortuary Temple of Hatshepsut",
+      "nameZh": "哈特谢普苏特女王神庙",
+      "countryCode": "EG",
+      "cityOrArea": "卢克索",
+      "geo": {
+        "lat": 25.7385,
+        "lng": 32.607
+      },
+      "navigation": {
+        "query": "Mortuary Temple of Hatshepsut, Egypt"
+      }
+    },
+    {
+      "id": "place-medinet-habu",
+      "name": "Medinet Habu",
+      "nameZh": "哈布城",
+      "countryCode": "EG",
+      "cityOrArea": "卢克索",
+      "geo": {
+        "lat": 25.719,
+        "lng": 32.6008
+      },
+      "navigation": {
+        "query": "Medinet Habu, Egypt"
+      }
+    },
+    {
+      "id": "place-felucca",
+      "name": "Nile Felucca Dock",
+      "nameZh": "尼罗河帆船码头",
+      "countryCode": "EG",
+      "cityOrArea": "卢克索",
+      "geo": {
+        "lat": 25.6955,
+        "lng": 32.6351
+      },
+      "navigation": {
+        "query": "Nile Felucca Dock, Egypt"
+      }
+    },
+    {
+      "id": "place-karnak",
+      "name": "Karnak Temple",
+      "nameZh": "卡尔纳克神庙",
+      "countryCode": "EG",
+      "cityOrArea": "卢克索",
+      "geo": {
+        "lat": 25.7196,
+        "lng": 32.6573
+      },
+      "navigation": {
+        "query": "Karnak Temple, Egypt"
+      }
+    },
+    {
+      "id": "hotel-sheraton-soma",
+      "name": "Sheraton Soma Bay",
+      "nameZh": "索马湾喜来登",
+      "countryCode": "EG",
+      "cityOrArea": "索马湾",
+      "geo": {
+        "lat": 26.8465,
+        "lng": 33.9988
+      },
+      "navigation": {
+        "query": "Sheraton Soma Bay, Egypt"
+      }
+    },
+    {
+      "id": "place-soma-marina",
+      "name": "Soma Bay Marina",
+      "nameZh": "索马湾码头",
+      "countryCode": "EG",
+      "cityOrArea": "索马湾",
+      "geo": {
+        "lat": 26.849,
+        "lng": 33.992
+      },
+      "navigation": {
+        "query": "Soma Bay Marina, Egypt"
+      }
+    },
+    {
+      "id": "place-red-sea-reef",
+      "name": "Red Sea Reef Area",
+      "nameZh": "红海海域",
+      "countryCode": "EG",
+      "cityOrArea": "索马湾",
+      "geo": {
+        "lat": 26.873,
+        "lng": 34.062
+      },
+      "navigation": {
+        "query": "Red Sea Reef Area, Egypt"
+      }
+    },
+    {
+      "id": "place-soma-beach",
+      "name": "Soma Bay Beach",
+      "nameZh": "索马湾海滩",
+      "countryCode": "EG",
+      "cityOrArea": "索马湾",
+      "geo": {
+        "lat": 26.855,
+        "lng": 33.997
+      },
+      "navigation": {
+        "query": "Soma Bay Beach, Egypt"
+      }
+    },
+    {
+      "id": "place-hurghada-airport",
+      "name": "Hurghada International Airport T2",
+      "nameZh": "赫尔格达机场 T2",
+      "countryCode": "EG",
+      "cityOrArea": "赫尔格达",
+      "geo": {
+        "lat": 27.1783,
+        "lng": 33.7994
+      },
+      "navigation": {
+        "query": "Hurghada International Airport T2, Egypt"
+      }
+    },
+    {
+      "id": "hotel-le-passage",
+      "name": "Le Passage Cairo Hotel & Casino",
+      "nameZh": "开罗机场酒店",
+      "countryCode": "EG",
+      "cityOrArea": "开罗",
+      "geo": {
+        "lat": 30.1155,
+        "lng": 31.3977
+      },
+      "navigation": {
+        "query": "Le Passage Cairo Hotel & Casino, Egypt"
+      }
+    }
+  ],
+  "restaurants": [],
+  "bookingsAndTickets": [],
+  "ticketPlanning": {
+    "statusStorage": "local",
+    "statusStorageNote": "门票状态默认只保存在当前浏览器。",
+    "items": [
+      {
+        "id": "ticket-giza-pyramids",
+        "day": 2,
+        "name": "吉萨金字塔门票",
+        "requirement": "advance-recommended",
+        "purchaseStatus": "not-purchased"
+      },
+      {
+        "id": "ticket-gem",
+        "day": 2,
+        "name": "大埃及博物馆门票",
+        "requirement": "advance-required",
+        "guidance": "官网 visit-gem.com 预约",
+        "purchaseStatus": "not-purchased"
+      },
+      {
+        "id": "ticket-valley-kings",
+        "day": 3,
+        "name": "帝王谷门票",
+        "requirement": "needs-confirmation",
+        "purchaseStatus": "not-purchased"
+      },
+      {
+        "id": "ticket-hatshepsut",
+        "day": 3,
+        "name": "女王神庙门票",
+        "requirement": "needs-confirmation",
+        "purchaseStatus": "not-purchased"
+      },
+      {
+        "id": "ticket-medinet-habu",
+        "day": 3,
+        "name": "哈布城门票",
+        "requirement": "needs-confirmation",
+        "purchaseStatus": "not-purchased"
+      },
+      {
+        "id": "ticket-karnak",
+        "day": 4,
+        "name": "卡尔纳克神庙门票",
+        "requirement": "needs-confirmation",
+        "purchaseStatus": "not-purchased"
+      }
+    ]
+  },
+  "preTrip": {
+    "packingItems": [
+      {
+        "id": "todo-gem",
+        "text": "确认大埃及博物馆 visit-gem.com 参观预约",
+        "completed": false
+      },
+      {
+        "id": "todo-transfer",
+        "text": "确认卢克索至索马湾包车时间、上车点和司机联系方式",
+        "completed": false
+      },
+      {
+        "id": "todo-terminals",
+        "text": "确认 CA829 / SM064 / SM027 / CA830 航站楼和行李额度",
+        "completed": false
+      }
+    ],
+    "preparationsExplicitlyMentioned": [
+      "大埃及博物馆官网 visit-gem.com",
+      "卢克索至索马湾晚包车 3.5h"
+    ],
+    "missingNote": ""
+  },
+  "mapLinks": {
+    "providedGoogleMapsLinks": [],
+    "note": "",
+    "cityLevelNavigationDisabled": false,
+    "navigationPolicy": {
+      "noNavigationTypes": [
+        "flight",
+        "note",
+        "rest"
+      ],
+      "selfNavigationTypes": [
+        "drive",
+        "return",
+        "transfer",
+        "check-in",
+        "check-out",
+        "restaurant",
+        "attraction",
+        "walk",
+        "hike"
+      ]
+    },
+    "navigationPlaces": []
+  },
+  "issuesAndUncertainties": [],
+  "map": {
+    "schemaVersion": "1.0-lite",
+    "mapMode": "template-auto",
+    "templateId": "auto",
+    "defaultRegionId": "overview",
+    "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+    "region": {
+      "id": "overview",
+      "label": "总览"
+    },
+    "regions": [
+      {
+        "id": "overview",
+        "label": "总览",
+        "templateId": "coastal-region",
+        "heading": "EGYPT ROUTE / 埃及总览",
+        "description": "埃及境内路线总览；飞行路线以虚线和飞机标识。"
+      },
+      {
+        "id": "cairo",
+        "label": "开罗",
+        "heading": "CAIRO / 开罗",
+        "description": "机场、酒店、金字塔和博物馆。"
+      },
+      {
+        "id": "luxor",
+        "label": "卢克索",
+        "heading": "LUXOR / 卢克索",
+        "description": "机场、酒店、尼罗河和东西岸神庙。"
+      },
+      {
+        "id": "soma",
+        "label": "索马湾",
+        "heading": "SOMA BAY / 索马湾",
+        "description": "红海酒店、码头、海域与赫尔格达机场。"
+      }
+    ],
+    "places": [
+      {
+        "id": "city-cairo",
+        "mapRegionId": "overview",
+        "geo": {
+          "lat": 30.0444,
+          "lng": 31.2357
+        },
+        "name": "Cairo",
+        "nameZh": "开罗",
+        "labelOffset": {
+          "x": 38,
+          "y": -42
+        },
+        "anchor": "start",
+        "overview": true
+      },
+      {
+        "id": "city-luxor",
+        "mapRegionId": "overview",
+        "geo": {
+          "lat": 25.6872,
+          "lng": 32.6396
+        },
+        "name": "Luxor",
+        "nameZh": "卢克索",
+        "labelOffset": {
+          "x": -42,
+          "y": 62
+        },
+        "anchor": "end",
+        "overview": true
+      },
+      {
+        "id": "city-soma-bay",
+        "mapRegionId": "overview",
+        "geo": {
+          "lat": 26.848,
+          "lng": 33.989
+        },
+        "name": "Soma Bay",
+        "nameZh": "索马湾",
+        "labelOffset": {
+          "x": 42,
+          "y": 44
+        },
+        "anchor": "start",
+        "overview": true
+      },
+      {
+        "id": "city-hurghada",
+        "mapRegionId": "overview",
+        "geo": {
+          "lat": 27.2579,
+          "lng": 33.8116
+        },
+        "name": "Hurghada",
+        "nameZh": "赫尔格达",
+        "labelOffset": {
+          "x": -46,
+          "y": -46
+        },
+        "anchor": "end",
+        "overview": true
+      },
+      {
+        "id": "place-cairo-airport",
+        "mapRegionId": "cairo",
+        "geo": {
+          "lat": 30.1115,
+          "lng": 31.4139
+        },
+        "name": "Cairo International Airport T3",
+        "nameZh": "开罗国际机场 T3"
+      },
+      {
+        "id": "hotel-longchamps",
+        "mapRegionId": "cairo",
+        "geo": {
+          "lat": 30.0637,
+          "lng": 31.2201
+        },
+        "name": "Longchamps Zamalek Hotel",
+        "nameZh": "Longchamps Zamalek 酒店"
+      },
+      {
+        "id": "place-zamalek",
+        "mapRegionId": "cairo",
+        "geo": {
+          "lat": 30.0634,
+          "lng": 31.2195
+        },
+        "name": "Zamalek",
+        "nameZh": "扎马雷克"
+      },
+      {
+        "id": "place-nmec",
+        "mapRegionId": "cairo",
+        "geo": {
+          "lat": 30.0076,
+          "lng": 31.2477
+        },
+        "name": "National Museum of Egyptian Civilization",
+        "nameZh": "埃及文明博物馆"
+      },
+      {
+        "id": "place-giza-pyramids",
+        "mapRegionId": "cairo",
+        "geo": {
+          "lat": 29.9792,
+          "lng": 31.1342
+        },
+        "name": "Giza Pyramids",
+        "nameZh": "吉萨金字塔"
+      },
+      {
+        "id": "place-gem",
+        "mapRegionId": "cairo",
+        "geo": {
+          "lat": 29.9931,
+          "lng": 31.1196
+        },
+        "name": "Grand Egyptian Museum",
+        "nameZh": "大埃及博物馆"
+      },
+      {
+        "id": "hotel-le-passage",
+        "mapRegionId": "cairo",
+        "geo": {
+          "lat": 30.1155,
+          "lng": 31.3977
+        },
+        "name": "Le Passage Cairo Hotel",
+        "nameZh": "开罗机场酒店"
+      },
+      {
+        "id": "place-luxor-airport",
+        "mapRegionId": "luxor",
+        "geo": {
+          "lat": 25.671,
+          "lng": 32.7066
+        },
+        "name": "Luxor International Airport",
+        "nameZh": "卢克索机场"
+      },
+      {
+        "id": "hotel-nile-palace",
+        "mapRegionId": "luxor",
+        "geo": {
+          "lat": 25.6867,
+          "lng": 32.6313
+        },
+        "name": "Steigenberger Nile Palace Luxor",
+        "nameZh": "尼罗河皇宫酒店"
+      },
+      {
+        "id": "place-valley-kings",
+        "mapRegionId": "luxor",
+        "geo": {
+          "lat": 25.7402,
+          "lng": 32.6014
+        },
+        "name": "Valley of the Kings",
+        "nameZh": "帝王谷"
+      },
+      {
+        "id": "place-hatshepsut",
+        "mapRegionId": "luxor",
+        "geo": {
+          "lat": 25.7385,
+          "lng": 32.607
+        },
+        "name": "Temple of Hatshepsut",
+        "nameZh": "女王神庙"
+      },
+      {
+        "id": "place-medinet-habu",
+        "mapRegionId": "luxor",
+        "geo": {
+          "lat": 25.719,
+          "lng": 32.6008
+        },
+        "name": "Medinet Habu",
+        "nameZh": "哈布城"
+      },
+      {
+        "id": "place-felucca",
+        "mapRegionId": "luxor",
+        "geo": {
+          "lat": 25.6955,
+          "lng": 32.6351
+        },
+        "name": "Nile Felucca Dock",
+        "nameZh": "尼罗河帆船码头"
+      },
+      {
+        "id": "place-karnak",
+        "mapRegionId": "luxor",
+        "geo": {
+          "lat": 25.7196,
+          "lng": 32.6573
+        },
+        "name": "Karnak Temple",
+        "nameZh": "卡尔纳克神庙"
+      },
+      {
+        "id": "hotel-sheraton-soma",
+        "mapRegionId": "soma",
+        "geo": {
+          "lat": 26.8465,
+          "lng": 33.9988
+        },
+        "name": "Sheraton Soma Bay",
+        "nameZh": "索马湾喜来登"
+      },
+      {
+        "id": "place-soma-marina",
+        "mapRegionId": "soma",
+        "geo": {
+          "lat": 26.849,
+          "lng": 33.992
+        },
+        "name": "Soma Bay Marina",
+        "nameZh": "索马湾码头"
+      },
+      {
+        "id": "place-red-sea-reef",
+        "mapRegionId": "soma",
+        "geo": {
+          "lat": 26.873,
+          "lng": 34.062
+        },
+        "name": "Red Sea Reef Area",
+        "nameZh": "红海海域"
+      },
+      {
+        "id": "place-soma-beach",
+        "mapRegionId": "soma",
+        "geo": {
+          "lat": 26.855,
+          "lng": 33.997
+        },
+        "name": "Soma Bay Beach",
+        "nameZh": "索马湾海滩"
+      },
+      {
+        "id": "place-hurghada-airport",
+        "mapRegionId": "soma",
+        "geo": {
+          "lat": 27.1783,
+          "lng": 33.7994
+        },
+        "name": "Hurghada Airport T2",
+        "nameZh": "赫尔格达机场 T2"
+      }
+    ],
+    "routes": [
+      {
+        "day": 2,
+        "mode": "flight",
+        "placeIds": [
+          "city-cairo",
+          "city-luxor"
+        ]
+      },
+      {
+        "day": 4,
+        "mode": "transfer",
+        "placeIds": [
+          "city-luxor",
+          "city-soma-bay"
+        ]
+      },
+      {
+        "day": 7,
+        "mode": "transfer",
+        "placeIds": [
+          "city-soma-bay",
+          "city-hurghada"
+        ]
+      },
+      {
+        "day": 7,
+        "mode": "flight",
+        "placeIds": [
+          "city-hurghada",
+          "city-cairo"
+        ]
+      },
+      {
+        "day": 1,
+        "mode": "local",
+        "placeIds": [
+          "place-cairo-airport",
+          "hotel-longchamps",
+          "place-nmec"
+        ]
+      },
+      {
+        "day": 2,
+        "mode": "local",
+        "placeIds": [
+          "hotel-longchamps",
+          "place-giza-pyramids",
+          "place-gem",
+          "place-cairo-airport"
+        ]
+      },
+      {
+        "day": 7,
+        "mode": "local",
+        "placeIds": [
+          "place-cairo-airport",
+          "hotel-le-passage"
+        ]
+      },
+      {
+        "day": 8,
+        "mode": "local",
+        "placeIds": [
+          "hotel-le-passage",
+          "place-cairo-airport"
+        ]
+      },
+      {
+        "day": 2,
+        "mode": "local",
+        "placeIds": [
+          "place-luxor-airport",
+          "hotel-nile-palace"
+        ]
+      },
+      {
+        "day": 3,
+        "mode": "local",
+        "placeIds": [
+          "hotel-nile-palace",
+          "place-valley-kings",
+          "place-hatshepsut",
+          "place-medinet-habu",
+          "place-felucca"
+        ]
+      },
+      {
+        "day": 4,
+        "mode": "local",
+        "placeIds": [
+          "hotel-nile-palace",
+          "place-karnak"
+        ]
+      },
+      {
+        "day": 5,
+        "mode": "local",
+        "placeIds": [
+          "hotel-sheraton-soma",
+          "place-soma-marina",
+          "place-red-sea-reef"
+        ]
+      },
+      {
+        "day": 6,
+        "mode": "local",
+        "placeIds": [
+          "hotel-sheraton-soma",
+          "place-red-sea-reef",
+          "place-soma-beach"
+        ]
+      },
+      {
+        "day": 7,
+        "mode": "local",
+        "placeIds": [
+          "hotel-sheraton-soma",
+          "place-red-sea-reef",
+          "place-hurghada-airport"
+        ]
+      }
+    ],
+    "dailyRoutes": []
+  },
+  "routeMap": {
+    "defaultRegionId": "overview",
+    "regions": [
+      {
+        "id": "overview",
+        "label": "总览",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "coastal-region",
+        "mapModeReason": "explicit-diy-override",
+        "mapModeMetrics": {
+          "placeCount": 4,
+          "geoPlaceCount": 4,
+          "widthKm": 271.18,
+          "heightKm": 483.65,
+          "spanKm": 503.75,
+          "averageNearestKm": 170.77,
+          "components": 1,
+          "largestLegKm": 503.75,
+          "jumpRatio": 1.26
+        },
+        "days": [
+          2,
+          4,
+          7
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-03-coastal.webp",
+        "title": "总览 · 旅行路线",
+        "ariaLabel": "总览模板化旅行路线示意图，共3天",
+        "description": "埃及境内路线总览；飞行路线以虚线和飞机标识。",
+        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "heading": {
+          "text": "EGYPT ROUTE / 埃及总览",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 2,
+            "mode": "flight",
+            "color": "#e77e22",
+            "placeIds": [
+              "city-cairo",
+              "city-luxor"
+            ],
+            "paths": [
+              "M844.1 284.05 C860.6 451.0 906.0 609.8 977.59 750.95"
+            ],
+            "overviewPaths": [
+              "M844.1 284.05 C860.6 451.0 906.0 609.8 977.59 750.95"
+            ]
+          },
+          {
+            "day": 4,
+            "mode": "transfer",
+            "color": "#209aaa",
+            "placeIds": [
+              "city-luxor",
+              "city-soma-bay"
+            ],
+            "paths": [
+              "M977.59 750.95 C1034.4 730.7 1081.2 696.6 1115.22 650.85"
+            ],
+            "overviewPaths": [
+              "M977.59 750.95 C1034.4 730.7 1081.2 696.6 1115.22 650.85"
+            ]
+          },
+          {
+            "day": 7,
+            "mode": "transfer",
+            "color": "#397dc1",
+            "placeIds": [
+              "city-soma-bay",
+              "city-hurghada"
+            ],
+            "paths": [
+              "M1115.22 650.85 C1093.9 623.0 1081.8 591.5 1079.7 558.35"
+            ],
+            "overviewPaths": [
+              "M1115.22 650.85 C1093.9 623.0 1081.8 591.5 1079.7 558.35"
+            ]
+          },
+          {
+            "day": 7,
+            "mode": "flight",
+            "color": "#397dc1",
+            "placeIds": [
+              "city-hurghada",
+              "city-cairo"
+            ],
+            "paths": [
+              "M1079.7 558.35 C976.8 484.6 896.7 391.4 844.1 284.05"
+            ],
+            "overviewPaths": [
+              "M1079.7 558.35 C976.8 484.6 896.7 391.4 844.1 284.05"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "city-cairo",
+            "x": 844.1,
+            "y": 284.05,
+            "color": "#e77e22",
+            "tx": 882.1,
+            "ty": 242.05,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Cairo /",
+              "开罗"
+            ],
+            "query": "Cairo 总览",
+            "geo": {
+              "lat": 30.0444,
+              "lng": 31.2357
+            },
+            "days": [
+              2,
+              7
+            ]
+          },
+          {
+            "id": "city-luxor",
+            "x": 977.59,
+            "y": 750.95,
+            "color": "#e77e22",
+            "tx": 935.59,
+            "ty": 812.95,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Luxor /",
+              "卢克索"
+            ],
+            "query": "Luxor 总览",
+            "geo": {
+              "lat": 25.6872,
+              "lng": 32.6396
+            },
+            "days": [
+              2,
+              4
+            ]
+          },
+          {
+            "id": "city-soma-bay",
+            "x": 1115.22,
+            "y": 650.85,
+            "color": "#209aaa",
+            "tx": 1157.22,
+            "ty": 694.85,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Soma Bay /",
+              "索马湾"
+            ],
+            "query": "Soma Bay 总览",
+            "geo": {
+              "lat": 26.848,
+              "lng": 33.989
+            },
+            "days": [
+              4,
+              7
+            ]
+          },
+          {
+            "id": "city-hurghada",
+            "x": 1079.7,
+            "y": 558.35,
+            "color": "#397dc1",
+            "tx": 1033.7,
+            "ty": 512.35,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Hurghada /",
+              "赫尔格达"
+            ],
+            "query": "Hurghada 总览",
+            "geo": {
+              "lat": 27.2579,
+              "lng": 33.8116
+            },
+            "days": [
+              7
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "city-cairo",
+          "city-luxor",
+          "city-soma-bay",
+          "city-hurghada"
+        ],
+        "dailyLayouts": {
+          "2": {
+            "places": [
+              "city-cairo",
+              "city-luxor"
+            ],
+            "labels": {
+              "city-cairo": {
+                "x": 882.1,
+                "y": 242.05,
+                "anchor": "start"
+              },
+              "city-luxor": {
+                "x": 935.59,
+                "y": 812.95,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 910.85,
+                "y": 517.5
+              }
+            ]
+          },
+          "4": {
+            "places": [
+              "city-luxor",
+              "city-soma-bay"
+            ],
+            "labels": {
+              "city-luxor": {
+                "x": 935.59,
+                "y": 812.95,
+                "anchor": "end"
+              },
+              "city-soma-bay": {
+                "x": 1157.22,
+                "y": 694.85,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 1046.4,
+                "y": 700.9
+              }
+            ]
+          },
+          "7": {
+            "places": [
+              "city-soma-bay",
+              "city-hurghada",
+              "city-cairo"
+            ],
+            "labels": {
+              "city-soma-bay": {
+                "x": 1157.22,
+                "y": 694.85,
+                "anchor": "start"
+              },
+              "city-hurghada": {
+                "x": 1033.7,
+                "y": 512.35,
+                "anchor": "end"
+              },
+              "city-cairo": {
+                "x": 882.1,
+                "y": 242.05,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 1097.46,
+                "y": 604.6
+              },
+              {
+                "items": [],
+                "x": 961.9,
+                "y": 421.2
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "cairo",
+        "label": "开罗",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "upland-basin",
+        "mapModeReason": "dense-place-cluster",
+        "mapModeMetrics": {
+          "placeCount": 7,
+          "geoPlaceCount": 7,
+          "widthKm": 28.28,
+          "heightKm": 15.13,
+          "spanKm": 31.24,
+          "averageNearestKm": 2.05,
+          "components": 1,
+          "largestLegKm": 31.24,
+          "jumpRatio": 4.61
+        },
+        "days": [
+          1,
+          2,
+          7,
+          8
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-06-upland-basin.webp",
+        "title": "开罗 · 旅行路线",
+        "ariaLabel": "开罗模板化旅行路线示意图，共4天",
+        "description": "机场、酒店、金字塔和博物馆。",
+        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "heading": {
+          "text": "CAIRO / 开罗",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 1,
+            "mode": "local",
+            "color": "#397dc1",
+            "placeIds": [
+              "place-cairo-airport",
+              "hotel-longchamps",
+              "place-nmec"
+            ],
+            "paths": [
+              "M1184.03 375.93 C1057.9 432.9 925.7 460.6 795.05 457.24 C784.6 512.3 790.0 565.9 810.72 614.68"
+            ],
+            "overviewPaths": [
+              "M1184.03 375.93 C1057.9 432.9 925.7 460.6 795.05 457.24 C784.6 512.3 790.0 565.9 810.72 614.68"
+            ]
+          },
+          {
+            "day": 2,
+            "mode": "local",
+            "color": "#e77e22",
+            "placeIds": [
+              "hotel-longchamps",
+              "place-giza-pyramids",
+              "place-gem",
+              "place-cairo-airport"
+            ],
+            "paths": [
+              "M795.05 457.24 C703.8 521.6 635.7 605.0 594.94 702.39 C565.0 684.1 542.3 659.3 528.36 629.16 C762.1 571.0 985.0 484.9 1184.03 375.93"
+            ],
+            "overviewPaths": [
+              "M795.05 457.24 C703.8 521.6 635.7 605.0 594.94 702.39 C565.0 684.1 542.3 659.3 528.36 629.16 C762.1 571.0 985.0 484.9 1184.03 375.93"
+            ]
+          },
+          {
+            "day": 7,
+            "mode": "local",
+            "color": "#397dc1",
+            "placeIds": [
+              "place-cairo-airport",
+              "hotel-le-passage"
+            ],
+            "paths": [
+              "M1184.03 375.93 C1149.1 376.2 1117.0 367.0 1089.37 348.93"
+            ],
+            "overviewPaths": [
+              "M1184.03 375.93 C1149.1 376.2 1117.0 367.0 1089.37 348.93"
+            ]
+          },
+          {
+            "day": 8,
+            "mode": "local",
+            "color": "#e77e22",
+            "placeIds": [
+              "hotel-le-passage",
+              "place-cairo-airport"
+            ],
+            "paths": [
+              "M1089.37 348.93 C1118.9 367.6 1151.0 376.8 1184.03 375.93"
+            ],
+            "overviewPaths": [
+              "M1089.37 348.93 C1118.9 367.6 1151.0 376.8 1184.03 375.93"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "place-cairo-airport",
+            "x": 1184.03,
+            "y": 375.93,
+            "color": "#397dc1",
+            "tx": 1046.03,
+            "ty": 287.93,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Cairo International Airport T3 /",
+              "开罗国际机场 T3"
+            ],
+            "query": "Cairo International Airport T3 开罗",
+            "geo": {
+              "lat": 30.1115,
+              "lng": 31.4139
+            },
+            "days": [
+              1,
+              2,
+              7,
+              8
+            ]
+          },
+          {
+            "id": "hotel-longchamps",
+            "x": 795.05,
+            "y": 457.24,
+            "color": "#397dc1",
+            "tx": 763.05,
+            "ty": 425.24,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Longchamps Zamalek Hotel /",
+              "Longchamps Zamalek 酒店"
+            ],
+            "query": "Longchamps Zamalek Hotel 开罗",
+            "geo": {
+              "lat": 30.0637,
+              "lng": 31.2201
+            },
+            "days": [
+              1,
+              2
+            ]
+          },
+          {
+            "id": "place-zamalek",
+            "x": 711.34,
+            "y": 505.59,
+            "color": "#397dc1",
+            "tx": 849.34,
+            "ty": 417.59,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Zamalek /",
+              "扎马雷克"
+            ],
+            "query": "Zamalek 开罗",
+            "geo": {
+              "lat": 30.0634,
+              "lng": 31.2195
+            },
+            "days": []
+          },
+          {
+            "id": "place-nmec",
+            "x": 810.72,
+            "y": 614.68,
+            "color": "#397dc1",
+            "tx": 732.72,
+            "ty": 552.68,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "National Museum of Egyptian Civilization /",
+              "埃及文明博物馆"
+            ],
+            "query": "National Museum of Egyptian Civilization 开罗",
+            "geo": {
+              "lat": 30.0076,
+              "lng": 31.2477
+            },
+            "days": [
+              1
+            ]
+          },
+          {
+            "id": "place-giza-pyramids",
+            "x": 594.94,
+            "y": 702.39,
+            "color": "#e77e22",
+            "tx": 456.94,
+            "ty": 614.39,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Giza Pyramids /",
+              "吉萨金字塔"
+            ],
+            "query": "Giza Pyramids 开罗",
+            "geo": {
+              "lat": 29.9792,
+              "lng": 31.1342
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "place-gem",
+            "x": 528.36,
+            "y": 629.16,
+            "color": "#e77e22",
+            "tx": 666.36,
+            "ty": 731.16,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Grand Egyptian Museum /",
+              "大埃及博物馆"
+            ],
+            "query": "Grand Egyptian Museum 开罗",
+            "geo": {
+              "lat": 29.9931,
+              "lng": 31.1196
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "hotel-le-passage",
+            "x": 1089.37,
+            "y": 348.93,
+            "color": "#397dc1",
+            "tx": 1121.37,
+            "ty": 316.93,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Le Passage Cairo Hotel /",
+              "开罗机场酒店"
+            ],
+            "query": "Le Passage Cairo Hotel 开罗",
+            "geo": {
+              "lat": 30.1155,
+              "lng": 31.3977
+            },
+            "days": [
+              7,
+              8
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "place-cairo-airport",
+          "hotel-longchamps",
+          "place-zamalek",
+          "place-nmec",
+          "place-giza-pyramids",
+          "place-gem",
+          "hotel-le-passage"
+        ],
+        "dailyLayouts": {
+          "1": {
+            "places": [
+              "place-cairo-airport",
+              "hotel-longchamps",
+              "place-nmec"
+            ],
+            "labels": {
+              "place-cairo-airport": {
+                "x": 1046.03,
+                "y": 287.93,
+                "anchor": "end"
+              },
+              "hotel-longchamps": {
+                "x": 763.05,
+                "y": 425.24,
+                "anchor": "end"
+              },
+              "place-nmec": {
+                "x": 732.72,
+                "y": 552.68,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 989.54,
+                "y": 416.59
+              },
+              {
+                "items": [],
+                "x": 802.88,
+                "y": 535.96
+              }
+            ]
+          },
+          "2": {
+            "places": [
+              "hotel-longchamps",
+              "place-giza-pyramids",
+              "place-gem",
+              "place-cairo-airport"
+            ],
+            "labels": {
+              "hotel-longchamps": {
+                "x": 763.05,
+                "y": 425.24,
+                "anchor": "end"
+              },
+              "place-giza-pyramids": {
+                "x": 456.94,
+                "y": 614.39,
+                "anchor": "end"
+              },
+              "place-gem": {
+                "x": 666.36,
+                "y": 731.16,
+                "anchor": "start"
+              },
+              "place-cairo-airport": {
+                "x": 1046.03,
+                "y": 287.93,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 695,
+                "y": 579.82
+              },
+              {
+                "items": [],
+                "x": 561.65,
+                "y": 665.77
+              },
+              {
+                "items": [],
+                "x": 856.19,
+                "y": 502.54
+              }
+            ]
+          },
+          "7": {
+            "places": [
+              "place-cairo-airport",
+              "hotel-le-passage"
+            ],
+            "labels": {
+              "place-cairo-airport": {
+                "x": 1046.03,
+                "y": 287.93,
+                "anchor": "end"
+              },
+              "hotel-le-passage": {
+                "x": 1121.37,
+                "y": 316.93,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 1136.7,
+                "y": 362.43
+              }
+            ]
+          },
+          "8": {
+            "places": [
+              "hotel-le-passage",
+              "place-cairo-airport"
+            ],
+            "labels": {
+              "hotel-le-passage": {
+                "x": 1121.37,
+                "y": 316.93,
+                "anchor": "start"
+              },
+              "place-cairo-airport": {
+                "x": 1046.03,
+                "y": 287.93,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 1136.7,
+                "y": 362.43
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "luxor",
+        "label": "卢克索",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "compact-basin",
+        "mapModeReason": "dense-place-cluster",
+        "mapModeMetrics": {
+          "placeCount": 7,
+          "geoPlaceCount": 7,
+          "widthKm": 10.58,
+          "heightKm": 7.68,
+          "spanKm": 13.05,
+          "averageNearestKm": 2.33,
+          "components": 1,
+          "largestLegKm": 7.75,
+          "jumpRatio": 1.72
+        },
+        "days": [
+          2,
+          3,
+          4
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-07-compact-basin.webp",
+        "title": "卢克索 · 旅行路线",
+        "ariaLabel": "卢克索模板化旅行路线示意图，共3天",
+        "description": "机场、酒店、尼罗河和东西岸神庙。",
+        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "heading": {
+          "text": "LUXOR / 卢克索",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 2,
+            "mode": "local",
+            "color": "#e77e22",
+            "placeIds": [
+              "place-luxor-airport",
+              "hotel-nile-palace"
+            ],
+            "paths": [
+              "M1086.98 791.4 C913.7 725.3 734.4 688.6 559.58 683.45"
+            ],
+            "overviewPaths": [
+              "M1086.98 791.4 C913.7 725.3 734.4 688.6 559.58 683.45"
+            ]
+          },
+          {
+            "day": 3,
+            "mode": "local",
+            "color": "#618344",
+            "placeIds": [
+              "hotel-nile-palace",
+              "place-valley-kings",
+              "place-hatshepsut",
+              "place-medinet-habu",
+              "place-felucca"
+            ],
+            "paths": [
+              "M559.58 683.45 C454.9 549.9 376.8 402.3 329.81 249.38 C358.5 269.5 390.3 280.2 423.41 280.91 C413.6 335.9 389.6 383.8 353.02 421.83 C418.8 503.3 501.4 560.4 596 589.84"
+            ],
+            "overviewPaths": [
+              "M559.58 683.45 C454.9 549.9 376.8 402.3 329.81 249.38 C358.5 269.5 390.3 280.2 423.41 280.91 C413.6 335.9 389.6 383.8 353.02 421.83 C418.8 503.3 501.4 560.4 596 589.84"
+            ]
+          },
+          {
+            "day": 4,
+            "mode": "local",
+            "color": "#209aaa",
+            "placeIds": [
+              "hotel-nile-palace",
+              "place-karnak"
+            ],
+            "paths": [
+              "M559.58 683.45 C647.2 610.1 710.3 519.5 744.97 417.21"
+            ],
+            "overviewPaths": [
+              "M559.58 683.45 C647.2 610.1 710.3 519.5 744.97 417.21"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "place-luxor-airport",
+            "x": 1086.98,
+            "y": 791.4,
+            "color": "#e77e22",
+            "tx": 1054.98,
+            "ty": 759.4,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Luxor International Airport /",
+              "卢克索机场"
+            ],
+            "query": "Luxor International Airport 卢克索",
+            "geo": {
+              "lat": 25.671,
+              "lng": 32.7066
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "hotel-nile-palace",
+            "x": 559.58,
+            "y": 683.45,
+            "color": "#e77e22",
+            "tx": 527.58,
+            "ty": 651.45,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Steigenberger Nile Palace Luxor /",
+              "尼罗河皇宫酒店"
+            ],
+            "query": "Steigenberger Nile Palace Luxor 卢克索",
+            "geo": {
+              "lat": 25.6867,
+              "lng": 32.6313
+            },
+            "days": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "place-valley-kings",
+            "x": 329.81,
+            "y": 249.38,
+            "color": "#618344",
+            "tx": 407.81,
+            "ty": 187.38,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Valley of the Kings /",
+              "帝王谷"
+            ],
+            "query": "Valley of the Kings 卢克索",
+            "geo": {
+              "lat": 25.7402,
+              "lng": 32.6014
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "place-hatshepsut",
+            "x": 423.41,
+            "y": 280.91,
+            "color": "#618344",
+            "tx": 455.41,
+            "ty": 248.91,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Temple of Hatshepsut /",
+              "女王神庙"
+            ],
+            "query": "Temple of Hatshepsut 卢克索",
+            "geo": {
+              "lat": 25.7385,
+              "lng": 32.607
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "place-medinet-habu",
+            "x": 353.02,
+            "y": 421.83,
+            "color": "#618344",
+            "tx": 491.02,
+            "ty": 333.83,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Medinet Habu /",
+              "哈布城"
+            ],
+            "query": "Medinet Habu 卢克索",
+            "geo": {
+              "lat": 25.719,
+              "lng": 32.6008
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "place-felucca",
+            "x": 596,
+            "y": 589.84,
+            "color": "#618344",
+            "tx": 734,
+            "ty": 691.84,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Nile Felucca Dock /",
+              "尼罗河帆船码头"
+            ],
+            "query": "Nile Felucca Dock 卢克索",
+            "geo": {
+              "lat": 25.6955,
+              "lng": 32.6351
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "place-karnak",
+            "x": 744.97,
+            "y": 417.21,
+            "color": "#209aaa",
+            "tx": 776.97,
+            "ty": 385.21,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Karnak Temple /",
+              "卡尔纳克神庙"
+            ],
+            "query": "Karnak Temple 卢克索",
+            "geo": {
+              "lat": 25.7196,
+              "lng": 32.6573
+            },
+            "days": [
+              4
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "place-luxor-airport",
+          "hotel-nile-palace",
+          "place-valley-kings",
+          "place-hatshepsut",
+          "place-medinet-habu",
+          "place-felucca",
+          "place-karnak"
+        ],
+        "dailyLayouts": {
+          "2": {
+            "places": [
+              "place-luxor-airport",
+              "hotel-nile-palace"
+            ],
+            "labels": {
+              "place-luxor-airport": {
+                "x": 1054.98,
+                "y": 759.4,
+                "anchor": "end"
+              },
+              "hotel-nile-palace": {
+                "x": 527.58,
+                "y": 651.45,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 823.28,
+                "y": 737.42
+              }
+            ]
+          },
+          "3": {
+            "places": [
+              "hotel-nile-palace",
+              "place-valley-kings",
+              "place-hatshepsut",
+              "place-medinet-habu",
+              "place-felucca"
+            ],
+            "labels": {
+              "hotel-nile-palace": {
+                "x": 527.58,
+                "y": 651.45,
+                "anchor": "end"
+              },
+              "place-valley-kings": {
+                "x": 407.81,
+                "y": 187.38,
+                "anchor": "start"
+              },
+              "place-hatshepsut": {
+                "x": 455.41,
+                "y": 248.91,
+                "anchor": "start"
+              },
+              "place-medinet-habu": {
+                "x": 491.02,
+                "y": 333.83,
+                "anchor": "start"
+              },
+              "place-felucca": {
+                "x": 734,
+                "y": 691.84,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 444.7,
+                "y": 466.42
+              },
+              {
+                "items": [],
+                "x": 376.61,
+                "y": 265.14
+              },
+              {
+                "items": [],
+                "x": 388.22,
+                "y": 351.37
+              },
+              {
+                "items": [],
+                "x": 474.51,
+                "y": 505.84
+              }
+            ]
+          },
+          "4": {
+            "places": [
+              "hotel-nile-palace",
+              "place-karnak"
+            ],
+            "labels": {
+              "hotel-nile-palace": {
+                "x": 527.58,
+                "y": 651.45,
+                "anchor": "end"
+              },
+              "place-karnak": {
+                "x": 776.97,
+                "y": 385.21,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 652.28,
+                "y": 550.33
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "soma",
+        "label": "索马湾",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "urban-radial",
+        "mapModeReason": "compact-city-route",
+        "mapModeMetrics": {
+          "placeCount": 5,
+          "geoPlaceCount": 5,
+          "widthKm": 25.99,
+          "heightKm": 36.83,
+          "spanKm": 42.77,
+          "averageNearestKm": 9.99,
+          "components": 1,
+          "largestLegKm": 42.77,
+          "jumpRatio": 6.17
+        },
+        "days": [
+          5,
+          6,
+          7
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-04-urban.webp",
+        "title": "索马湾 · 旅行路线",
+        "ariaLabel": "索马湾模板化旅行路线示意图，共3天",
+        "description": "红海酒店、码头、海域与赫尔格达机场。",
+        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "heading": {
+          "text": "SOMA BAY / 索马湾",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 5,
+            "mode": "local",
+            "color": "#8865a5",
+            "placeIds": [
+              "hotel-sheraton-soma",
+              "place-soma-marina",
+              "place-red-sea-reef"
+            ],
+            "paths": [
+              "M982.56 843.51 C947.6 844.9 915.1 836.7 886.84 819.47 C949.1 817.9 1006.0 799.7 1054.11 765.79"
+            ],
+            "overviewPaths": [
+              "M982.56 843.51 C947.6 844.9 915.1 836.7 886.84 819.47 C949.1 817.9 1006.0 799.7 1054.11 765.79"
+            ]
+          },
+          {
+            "day": 6,
+            "mode": "local",
+            "color": "#df6185",
+            "placeIds": [
+              "hotel-sheraton-soma",
+              "place-red-sea-reef",
+              "place-soma-beach"
+            ],
+            "paths": [
+              "M982.56 843.51 C1014.7 824.2 1039.0 797.8 1054.11 765.79 C1018.4 770.3 984.4 764.7 953.95 749.45"
+            ],
+            "overviewPaths": [
+              "M982.56 843.51 C1014.7 824.2 1039.0 797.8 1054.11 765.79 C1018.4 770.3 984.4 764.7 953.95 749.45"
+            ]
+          },
+          {
+            "day": 7,
+            "mode": "local",
+            "color": "#397dc1",
+            "placeIds": [
+              "hotel-sheraton-soma",
+              "place-red-sea-reef",
+              "place-hurghada-airport"
+            ],
+            "paths": [
+              "M982.56 843.51 C999.1 809.9 1023.4 783.5 1054.11 765.79 C938.7 570.0 799.7 392.8 645.26 244.45"
+            ],
+            "overviewPaths": [
+              "M982.56 843.51 C999.1 809.9 1023.4 783.5 1054.11 765.79 C938.7 570.0 799.7 392.8 645.26 244.45"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "hotel-sheraton-soma",
+            "x": 982.56,
+            "y": 843.51,
+            "color": "#8865a5",
+            "tx": 1014.56,
+            "ty": 811.51,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Sheraton Soma Bay /",
+              "索马湾喜来登"
+            ],
+            "query": "Sheraton Soma Bay 索马湾",
+            "geo": {
+              "lat": 26.8465,
+              "lng": 33.9988
+            },
+            "days": [
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "id": "place-soma-marina",
+            "x": 886.84,
+            "y": 819.47,
+            "color": "#8865a5",
+            "tx": 854.84,
+            "ty": 787.47,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Soma Bay Marina /",
+              "索马湾码头"
+            ],
+            "query": "Soma Bay Marina 索马湾",
+            "geo": {
+              "lat": 26.849,
+              "lng": 33.992
+            },
+            "days": [
+              5
+            ]
+          },
+          {
+            "id": "place-red-sea-reef",
+            "x": 1054.11,
+            "y": 765.79,
+            "color": "#8865a5",
+            "tx": 1132.11,
+            "ty": 703.79,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Red Sea Reef Area /",
+              "红海海域"
+            ],
+            "query": "Red Sea Reef Area 索马湾",
+            "geo": {
+              "lat": 26.873,
+              "lng": 34.062
+            },
+            "days": [
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "id": "place-soma-beach",
+            "x": 953.95,
+            "y": 749.45,
+            "color": "#df6185",
+            "tx": 875.95,
+            "ty": 687.45,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Soma Bay Beach /",
+              "索马湾海滩"
+            ],
+            "query": "Soma Bay Beach 索马湾",
+            "geo": {
+              "lat": 26.855,
+              "lng": 33.997
+            },
+            "days": [
+              6
+            ]
+          },
+          {
+            "id": "place-hurghada-airport",
+            "x": 645.26,
+            "y": 244.45,
+            "color": "#397dc1",
+            "tx": 783.26,
+            "ty": 156.45,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Hurghada Airport T2 /",
+              "赫尔格达机场 T2"
+            ],
+            "query": "Hurghada Airport T2 索马湾",
+            "geo": {
+              "lat": 27.1783,
+              "lng": 33.7994
+            },
+            "days": [
+              7
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "hotel-sheraton-soma",
+          "place-soma-marina",
+          "place-red-sea-reef",
+          "place-soma-beach",
+          "place-hurghada-airport"
+        ],
+        "dailyLayouts": {
+          "5": {
+            "places": [
+              "hotel-sheraton-soma",
+              "place-soma-marina",
+              "place-red-sea-reef"
+            ],
+            "labels": {
+              "hotel-sheraton-soma": {
+                "x": 1014.56,
+                "y": 811.51,
+                "anchor": "start"
+              },
+              "place-soma-marina": {
+                "x": 854.84,
+                "y": 787.47,
+                "anchor": "end"
+              },
+              "place-red-sea-reef": {
+                "x": 1132.11,
+                "y": 703.79,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 934.7,
+                "y": 831.49
+              },
+              {
+                "items": [],
+                "x": 970.47,
+                "y": 792.63
+              }
+            ]
+          },
+          "6": {
+            "places": [
+              "hotel-sheraton-soma",
+              "place-red-sea-reef",
+              "place-soma-beach"
+            ],
+            "labels": {
+              "hotel-sheraton-soma": {
+                "x": 1014.56,
+                "y": 811.51,
+                "anchor": "start"
+              },
+              "place-red-sea-reef": {
+                "x": 1132.11,
+                "y": 703.79,
+                "anchor": "start"
+              },
+              "place-soma-beach": {
+                "x": 875.95,
+                "y": 687.45,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 1018.33,
+                "y": 804.65
+              },
+              {
+                "items": [],
+                "x": 1004.03,
+                "y": 757.62
+              }
+            ]
+          },
+          "7": {
+            "places": [
+              "hotel-sheraton-soma",
+              "place-red-sea-reef",
+              "place-hurghada-airport"
+            ],
+            "labels": {
+              "hotel-sheraton-soma": {
+                "x": 1014.56,
+                "y": 811.51,
+                "anchor": "start"
+              },
+              "place-red-sea-reef": {
+                "x": 1132.11,
+                "y": 703.79,
+                "anchor": "start"
+              },
+              "place-hurghada-airport": {
+                "x": 783.26,
+                "y": 156.45,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 1018.33,
+                "y": 804.65
+              },
+              {
+                "items": [],
+                "x": 849.68,
+                "y": 505.12
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
