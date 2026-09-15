@@ -1,0 +1,15 @@
+# Build dependencies and repository metadata are not site assets.
+node_modules/
+.git/
+
+# Agent, source, test, and optional-server materials are not served by the static site.
+.claude/
+advanced/
+optional/
+references/
+schemas/
+scripts/
+tests/
+
+# Original planning material is not used by the published page.
+Egypt 2.xlsx
